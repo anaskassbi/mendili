@@ -273,16 +273,8 @@
 
 
             <li>
-                <?php echo $lang["activites"] ?>
-                <ul>
-                    <li><a href="activites.php">
-                            Activités
-                        </a></li>
-                    <li><a href="localisation.php">
-                            Doc & News
-                        </a></li>
+                <a href="activites.php"><?php echo $lang["activites"] ?></a>
 
-                </ul>
             </li>
 
             <li>

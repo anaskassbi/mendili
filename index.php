@@ -7,7 +7,7 @@ include "config.php"
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Restauration</title>
+    <title>Acceuil</title>
     <meta name="description"
         content="La villa Serout Jenna se situe dans le cœur de la Palmeraie, dans le domaine de Bab Atlas à Marrakech. Le lieu idéal à Marrakech pour louer une villa de luxe en exclusivité." />
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -111,7 +111,7 @@ include "config.php"
         $(document).ready(function () {
             var w = $(window).width();
             var h = $(window).height();
-           
+
 
             $("#playbutton").click(function () {
                 if ($(this).hasClass('fa-play')) {
@@ -204,7 +204,7 @@ include "config.php"
             </div>
         </div>
 
-        
+
     </div>
     <div class="footer">
         <div class="txt_footer">
@@ -273,7 +273,7 @@ include "config.php"
 
 
             <li>
-                <?php echo $lang["activites"] ?>
+                <a href="activites.php"><?php echo $lang["activites"] ?></a>
             </li>
 
             <li>

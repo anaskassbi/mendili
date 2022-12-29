@@ -253,7 +253,7 @@ include "config.php";
             <li>
                 <?php echo $lang["chambres"] ?>
                 <ul>
-                    <li><a href="deluxe.php">Chambre Deluxe</a></li>
+                    <li><a href="deluxe.php">Chambre De luxe</a></li>
                     <li><a href="junior.php">Suites Junior</a></li>
                     <li><a href="prestige.php">Suits Prestige</a></li>
                 </ul>
@@ -276,16 +276,7 @@ include "config.php";
 
 
             <li>
-                <?php echo $lang["activites"] ?>
-                <ul>
-                    <li><a href="activites.php">
-                            Activités
-                        </a></li>
-                    <li><a href="localisation.php">
-                            Doc & News
-                        </a></li>
-
-                </ul>
+                <a href="activites.php"><?php echo $lang["activites"] ?></a>
             </li>
 
             <li>
