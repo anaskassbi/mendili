@@ -1,0 +1,140 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Villa Marrakech Serout Jenna - Une villa d'exception pour un s&eacute;jour luxueux dans la Palmeraie de
+        Marrakech.</title>
+    <meta name="description"
+        content="Une villa de luxe &agrave; Marrakech. Serout Jenna est une villa en location exclusive dans la Palmeraie de Marrakech. Un service h&ocirc;telier haut de gamme, une restauration gastronomique pour un s&eacute;jour luxueux &agrave; Marrakech." />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+        var isMobile = false;
+        $(function () {
+            var resizeTimer, wn = $(window);
+            var resize = function () {
+                if (wn.outerWidth(true) < 480 && !window.location.href.includes("small=1")) {
+
+                    if (!window.location.href.includes("small")) {
+                        a_href = window.location.href.replace(/(small=)[^\&]+/, '$1' + '1');
+                        if (a_href == window.location.href) {
+                            if (a_href.includes("?")) {
+                                a_href += '&small=1';
+                            } else {
+                                a_href += '?small=1';
+                            }
+                        }
+                    } else {
+                        a_href = window.location.href.replace("small=", "small=1");
+                    }
+                    window.location.href = a_href;
+                }
+
+                if (wn.outerWidth(true) > 760 && window.location.href.includes("small=1")) {
+                    a_href = window.location.href.replace("small=1", "small=");
+                    console.log(a_href)
+                    window.location.href = a_href;
+                }
+            };
+
+            wn.bind('resize', function () {
+                if (resizeTimer)
+                    clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(resize, 600);
+            }).resize();
+        });
+    </script>
+    <link rel="stylesheet" href="/theme/supersized.shutter.css" type="text/css" />
+    <script type="text/javascript" src="js/supersized.3.2.6.min.js"></script>
+    <script type="text/javascript" src="/theme/supersized.shutter.min.js"></script>
+    <script type="text/javascript" src="js/jquery.queryloader2.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/unitpngfix.js"></script>
+<![endif]-->
+    <script type="text/javascript" src="js/jquery.effects.js"></script>
+    <script type="text/javascript">
+        var gObjet = { transition_speed: 1800, performance: 0, slides: [{ image: "images/bg/ac/ac00.jpg" }, { image: "images/bg/ac/25-01-2021.jpg" }, { image: "/images/bg/ac/p02.jpg" }, { image: "/images/bg/restauration.jpg" }, { image: "/images/bg/ac/ac5.jpg" }, { image: "/images/bg/ac/p6.jpg" }, { image: "/images/bg/ac/ac07.jpg" }] };
+        if (!isMobile)
+            jQuery(function (a) { a.supersized(gObjet); });
+
+        $(document).ready(function () {
+
+            $("#playbutton").click(function () {
+                if ($(this).hasClass('fa-play')) {
+                    $(this).removeClass('fa-play');
+                    $(this).addClass('fa-pause');
+                    document.getElementById('player').play()
+                    $("#play").attr("src", "images/commun/pause.png");
+
+
+                }
+                else {
+                    $(this).removeClass('fa-pause');
+                    $(this).addClass('fa-play');
+                    document.getElementById('player').pause()
+                    $("#play").attr("src", "images/commun/play.png");
+
+
+                }
+            }) 
+            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" }) });    
+    </script>
+</head>
+
+<body> <a style="float: left; margin: 10px 0 0 10px;" href="#" id="playbutton" data-lity class="fa-play">
+        <img id="play" src="images/commun/play.png" width="28" height="26" alt="" />
+    </a>
+
+    <div class="preloader"></div>
+    <a id="prevslide" class="load-item"></a>
+    <a id="nextslide" class="load-item"></a>
+    <div class="home">
+        <div class="header">
+            <div class="div_logo"><a href="index.php" class="logo">&nbsp;</a></div>
+            <div class="filet"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="" class="selectedL">Accueil</a></li>
+                    <li><a href="presentation.php">Presentation</a></li>
+                    <li><a href="deluxe.php">Visite</a></li>
+                    <li><a href="spa.php">Services</a></li>
+                    <li><a href="tarifs.php">Activites</a></li>
+                    <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">Evenements</a></li>
+                    <li><a href="activites.php">
+                            <?php echo $lang["activites"] ?>
+                        </a></li>
+                    <li><a href="galerieInterieur.php">Contact</a></li>
+                </ul>
+            </div>
+            <div class="langue"><a href="?lang=fr">FR</a><span style="color:#7A7A7A;font-family:arial;font-size:12px;">
+                    | </span> <a href="?lang=en">EN</a></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="txt_footer">
+            <?php echo $lang["droits"] ?>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36951903-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    
+
+ <audio style="display: none;" id="player" src="audio/background music.mp3" preload="auto" controls
+                    loop>
+                </audio> </body>
+
+</html>
