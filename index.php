@@ -206,6 +206,54 @@ include "config.php"
 
 
     </div>
+    <style>
+        #watermark {
+            position: fixed;
+            bottom: 50px;
+            right: 5px;
+            z-index: 99;
+            color: white;
+        }
+
+        .zoom {
+
+            /* Animation */
+            width: 40px;
+            height: 38px;
+            margin: 0 auto;
+        }
+
+        .zoom:hover {
+            transform: scale(1.5);
+            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+    </style>
+    <div id="watermark">
+        <table style="border-collapse: collapse;margin-left: 20px;">
+            <tr>
+
+                <td style="border: none;">
+                    <a style="float: left; margin: 10px 0 0 10px;" href="#" data-lity class="fa-play">
+                        <img id="play" src="images/commun/instagram.png" width="40" height="38" class="zoom" alt="" />
+                    </a>
+                </td>
+                <td style="border: none;">
+                    <a style="float: left; margin: 10px 0 0 10px;" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=+213800010010&text=Hello" data-lity class="fa-play">
+                        <img id="play" src="images/commun/whatsapp.png" width="40" height="38" class="zoom" alt="" />
+                    </a>
+                </td>
+
+                <td style="border: none;">
+                    <a style="float: left; margin: 10px 0 0 10px;"
+                        href="https://www.tripadvisor.com/Hotel_Review-g293734-d1175499-Reviews-Riad_Al_Mendili_Kasbah-Marrakech_Marrakech_Safi.html"
+                        data-lity class="fa-play">
+                        <img id="play" src="images/commun/tripadvisor.png" width="40" height="38" class="zoom" alt="" />
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="footer">
         <div class="txt_footer">
             <?php echo $lang["droits"] ?>
