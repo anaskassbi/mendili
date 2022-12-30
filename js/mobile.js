@@ -95,8 +95,9 @@ isMobile = true;
             if (i == 0 && gray == -1 && img.split('_.jpg').length > 1) {
                 gray = i;
             } else {
-                img = img.replace(/bg_ipad\//i, "bg_phone/");
-                img = img.replace(/bg\//i, "bg_phone/");
+                ////here bg_phone
+                img = img.replace(/bg_ipad\//i, "bg/");
+                img = img.replace(/bg\//i, "bg/");
                 html += '<li><img src="' + img + '" /></li>';
                 fImage.push(img);
             }
