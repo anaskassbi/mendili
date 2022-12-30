@@ -9,8 +9,7 @@ include "config.php"
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>SPA</title>
     <meta name="description"
-        content="La villa Serout Jenna se situe dans le cœur de la Palmeraie, dans le domaine de Bab Atlas à Marrakech. Le lieu idéal à Marrakech pour louer une villa de luxe en exclusivité." />
-    <link rel="shortcut icon" href="/favicon.ico" />
+Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad.    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
     <link rel="stylesheet" href="css/jquery-ui.structure.min.css" type="text/css" />
@@ -129,18 +128,16 @@ include "config.php"
                     $(this).addClass('fa-pause');
                     document.getElementById('player').play()
                     $("#play").attr("src", "images/commun/pause.png");
-
-
                 }
+
                 else {
                     $(this).removeClass('fa-pause');
                     $(this).addClass('fa-play');
                     document.getElementById('player').pause()
                     $("#play").attr("src", "images/commun/play.png");
-
-
                 }
             })
+
             $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" });
             if (!isMobile) {
                 var a = "0";
@@ -156,8 +153,7 @@ include "config.php"
                         setTimeout('$(".block_txt_center").remove()', 1e3); a = "1"
                     }
                 });
-
-                setTimeout('$(".slide-0 a img").attr("src", "images/spa/1.jpg")', 7800);
+                setTimeout('$(".slide-0 a img").attr("src", "images/bg/spa/1.jpg")', 7800);
             }
         });
 
@@ -219,8 +215,7 @@ include "config.php"
                     <div class="scroll-pane">
                         </br>
                         <?php echo $lang["spaText"] ?>
-                        <h2><?php echo $lang["downloadSpa"]; ?></h2>
-
+                        <h2> <?php echo $lang["downloadSpa"]; ?></h2>
                         <p class="localisation-bloc">
                             <a id="btnShow" href="#">
                                 <img src="images/commun/spafirstpage.png" srcset="images/commun/spafirstpage.png"
@@ -276,9 +271,9 @@ include "config.php"
             <li>
                 <?php echo $lang["chambres"] ?>
                 <ul>
-                    <li><a href="deluxe.php">Chambre Deluxe</a></li>
+                    <li><a href="deluxe.php">Chambres De luxe</a></li>
                     <li><a href="junior.php">Suites Junior</a></li>
-                    <li><a href="prestige.php">Suits Prestige</a></li>
+                    <li><a href="prestige.php">Suites Prestige</a></li>
                 </ul>
             </li>
 
@@ -293,7 +288,7 @@ include "config.php"
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="reservation.php">
+            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
                     <?php echo $lang["reservation"] ?>
                 </a></li>
 

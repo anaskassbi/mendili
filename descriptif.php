@@ -213,9 +213,9 @@ include "config.php"
             <li>
                 <?php echo $lang["chambres"] ?>
                 <ul>
-                    <li><a href="deluxe.php">Chambre Deluxe</a></li>
+                    <li><a href="deluxe.php">Chambres De luxe</a></li>
                     <li><a href="junior.php">Suites Junior</a></li>
-                    <li><a href="prestige.php">Suits Prestige</a></li>
+                    <li><a href="prestige.php">Suites Prestige</a></li>
                 </ul>
             </li>
 
@@ -230,7 +230,7 @@ include "config.php"
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="reservation.php">
+            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
                     <?php echo $lang["reservation"] ?>
                 </a></li>
 

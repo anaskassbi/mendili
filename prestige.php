@@ -7,7 +7,7 @@ include "config.php"
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Al Mendili suits prestige</title>
+    <title>Al Mendili Suites prestige</title>
 
     <meta name="description"
         content="Vous souhaitez louer une villa d'exception à Marrakech ? Située dans le domaine privé de Bab Atlas dans la Palmeraie de Marrakech, la villa de luxe Serout Jenna propose à ses hôtes un service personnalisé et haut de gamme." />
@@ -180,7 +180,7 @@ include "config.php"
             <ul>
                 <li><a href="deluxe.php">Chambre Deluxe</a></li>
                 <li><a href="junior.php">Suites Junior</a></li>
-                <li><a href="prestige.php" class="selectedL">Suits Prestige</a></li>
+                <li><a href="prestige.php" class="selectedL">Suites Prestige</a></li>
             </ul>
         </div>
         <div class="center">
@@ -262,9 +262,9 @@ include "config.php"
             <li>
                 <?php echo $lang["chambres"] ?>
                 <ul>
-                    <li><a href="deluxe.php">Chambre Deluxe</a></li>
+                    <li><a href="deluxe.php">Chambres De luxe</a></li>
                     <li><a href="junior.php">Suites Junior</a></li>
-                    <li><a href="prestige.php">Suits Prestige</a></li>
+                    <li><a href="prestige.php">Suites Prestige</a></li>
                 </ul>
             </li>
 
@@ -279,7 +279,7 @@ include "config.php"
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="reservation.php">
+            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
                     <?php echo $lang["reservation"] ?>
                 </a></li>
 

@@ -10,8 +10,8 @@ include "config.php"
     <title>Al Mendili chambres deluxe</title>
     <meta name="description"
         content="Vous souhaitez louer une villa d'exception à Marrakech ? Située dans le domaine privé de Bab Atlas dans la Palmeraie de Marrakech, la villa de luxe Serout Jenna propose à ses hôtes un service personnalisé et haut de gamme." />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript">
         var isMobile = false;
@@ -179,7 +179,7 @@ include "config.php"
             <ul>
                 <li><a href="deluxe.php" class="selectedL">Chambres De luxe</a></li>
                 <li><a href="junior.php">Suites Junior</a></li>
-                <li><a href="prestige.php">Suits Prestige</a></li>
+                <li><a href="prestige.php">Suites Prestige</a></li>
             </ul>
         </div>
         <div class="center">
@@ -323,9 +323,9 @@ include "config.php"
             <li>
                 <?php echo $lang["chambres"] ?>
                 <ul>
-                    <li><a href="deluxe.php">Chambre Deluxe</a></li>
+                    <li><a href="deluxe.php">Chambres De luxe</a></li>
                     <li><a href="junior.php">Suites Junior</a></li>
-                    <li><a href="prestige.php">Suits Prestige</a></li>
+                    <li><a href="prestige.php">Suites Prestige</a></li>
                 </ul>
             </li>
 
@@ -340,7 +340,7 @@ include "config.php"
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="reservation.php">
+            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
                     <?php echo $lang["reservation"] ?>
                 </a></li>
 

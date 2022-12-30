@@ -9,8 +9,7 @@ include "config.php"
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>El Mendili de l'interieur</title>
     <meta name="description"
-        content="La villa Serout Jenna se situe dans le cœur de la Palmeraie, dans le domaine de Bab Atlas à Marrakech. Le lieu idéal à Marrakech pour louer une villa de luxe en exclusivité." />
-    <link rel="shortcut icon" href="/favicon.ico" />
+Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad.    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/lsb.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
@@ -256,9 +255,9 @@ include "config.php"
             <li>
                 <?php echo $lang["chambres"] ?>
                 <ul>
-                    <li><a href="deluxe.php">Chambre Deluxe</a></li>
+                    <li><a href="deluxe.php">Chambres De luxe</a></li>
                     <li><a href="junior.php">Suites Junior</a></li>
-                    <li><a href="prestige.php">Suits Prestige</a></li>
+                    <li><a href="prestige.php">Suites Prestige</a></li>
                 </ul>
             </li>
 
@@ -273,7 +272,7 @@ include "config.php"
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="reservation.php">
+            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
                     <?php echo $lang["reservation"] ?>
                 </a></li>
 
