@@ -352,7 +352,6 @@ include "config.php"
             <div class="center_txt">
                 <div class="block_txt_center" style="float:left;margin-left:650px; padding:30px 0 0 0;">
                     <div class="scroll-pane">
-
                         <p>
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13607.46820161369!2d-7.879285!3d31.500338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92ee15015cc436b5!2sRiad%20Al%20Mendili%20Private%20Resort%20%26%20Spa!5e0!3m2!1sen!2sfr!4v1671888395611!5m2!1sen!2sfr"

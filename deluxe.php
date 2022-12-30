@@ -10,8 +10,8 @@ include "config.php"
     <title>Al Mendili chambres deluxe</title>
     <meta name="description"
         content="Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad." />
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript">
         var isMobile = false;
@@ -75,7 +75,6 @@ include "config.php"
             width: 100%;
             height: auto;
         }
-
     </style>
     <link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" />
     <script type="text/javascript" src="js/supersized.3.2.6.min.js"></script>
@@ -184,23 +183,18 @@ include "config.php"
         </div>
         <div class="center">
             <div class="center_txt">
-                <div class="block_txt_center" style="float:left; width:100%">
-                    <div id='wrapper' style='text-align: center; margin: 70px;'>
-
+                <div class="block_txt_center" style="margin-right: 500px; text-align: center; width: 900px;" >
+                    <div class="scroll-pane" id='wrapper' style="width: 900px;" >
                         <div style='display: inline-block; vertical-align: top;'>
-
                             <p class="localisation-bloc">
                                 <a class="room" href="elaskaria.php">
                                     <img class="full" src="images/chambres/Chambre Deluxe/EL ASKARIA/1.jpeg"
                                         srcset="images/chambres/Chambre Deluxe/EL ASKARIA/1.jpeg" alt="El Alia" />
                                 </a>
                             </p>
-
                             <div class="conditions">
                                 <h2>EL ASKARIA</h2>
                             </div>
-
-
                         </div>
                         <div style='display: inline-block; vertical-align: top;'>
                             <p class="localisation-bloc">
@@ -209,13 +203,10 @@ include "config.php"
                                         srcset="images/chambres/Chambre Deluxe/LAILA SAIDA/1.jpeg" alt="El Alia" />
                                 </a>
                             </p>
-
                             <div class="conditions">
                                 <h2>LAILA SAIDA</h2>
-
                             </div>
                         </div>
-
                         <div style='display: inline-block; vertical-align: top;'>
                             <p class="localisation-bloc">
                                 <a href="elalia.php">
@@ -223,10 +214,8 @@ include "config.php"
                                         srcset="images/chambres/Chambre Deluxe/EL ALIA/1.jpeg" alt="El Alia" />
                                 </a>
                             </p>
-
                             <div class="conditions">
                                 <h2>EL ALIA</h2>
-
                             </div>
                         </div>
                         <div style='display: inline-block; vertical-align: top;'>
@@ -236,7 +225,6 @@ include "config.php"
                                         srcset="images/chambres/Chambre Deluxe/EL Amira/1.jpeg" alt="El Amira" />
                                 </a>
                             </p>
-
                             <div class="conditions">
                                 <h2>EL AMIRA</h2>
                             </div>
@@ -248,13 +236,9 @@ include "config.php"
                                         srcset="images/chambres/Chambre Deluxe/SOUHILA/1.jpeg" alt="Souihla" />
                                 </a>
                             </p>
-
-
                             <div class="conditions">
                                 <h2>SOUIHLA</h2>
                             </div>
-
-
                         </div>
                         <div style='display: inline-block; vertical-align: top;'>
                             <p class="localisation-bloc">
@@ -268,12 +252,8 @@ include "config.php"
                             <div class="conditions">
                                 <h2>EL YACOUT</h2>
                             </div>
-
-
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -340,7 +320,8 @@ include "config.php"
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
+            <li><a
+                    href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
                     <?php echo $lang["reservation"] ?>
                 </a></li>
 
