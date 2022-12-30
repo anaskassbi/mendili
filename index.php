@@ -254,7 +254,7 @@ include "config.php"
             <tr>
 
                 <td style="border: none;">
-                    <a style="float: left; margin: 10px 0 0 10px;" href="#" data-lity class="fa-play">
+                    <a style="float: left; margin: 10px 0 0 10px;" href="https://www.instagram.com/almendilikasbah/" data-lity class="fa-play">
                         <img id="play" src="images/commun/instagram.png" width="40" height="38" class="zoom" alt="" />
                     </a>
                 </td>
@@ -345,8 +345,6 @@ include "config.php"
                     ?>
                 <?php echo $lang["reservation"]; ?>
                 </a></li>
-
-
             <li>
                 <a href="activites.php"><?php echo $lang["activites"] ?></a>
             </li>
