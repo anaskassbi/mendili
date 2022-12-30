@@ -8,8 +8,9 @@ include "config.php"
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Acceuil</title>
-    <meta name="description"
-Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad.    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="description" Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous
+        accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad. <link rel="shortcut icon"
+        href="/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
     <link rel="stylesheet" href="css/jquery-ui.structure.min.css" type="text/css" />
@@ -111,15 +112,12 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
             var w = $(window).width();
             var h = $(window).height();
 
-
             $("#playbutton").click(function () {
                 if ($(this).hasClass('fa-play')) {
                     $(this).removeClass('fa-play');
                     $(this).addClass('fa-pause');
                     document.getElementById('player').play()
                     $("#play").attr("src", "images/commun/pause.png");
-
-
                 }
                 else {
                     $(this).removeClass('fa-pause');
@@ -130,7 +128,26 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
 
                 }
             })
-            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" });
+            $("body").queryLoader2({
+                onComplete: function () {
+                    $(".preloader").fadeOut(1e3);
+                    setTimeout(
+                        function () {
+                            $("#supersized").css({"filter":"grayscale(0%)"})
+  
+                            
+                        }
+                        , 2000)
+                },
+                barColor: "#efefef",
+                backgroundColor: "#111",
+                percentage: true,
+                barHeight: 1,
+                minimumTime: 2000,
+                fadeOutTime: 1000
+            });
+
+
             if (!isMobile) {
                 var a = "0";
                 $("#prevslide").click(function () {
@@ -178,9 +195,14 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
                     <li><a href="tarifs.php">
                             <?php echo $lang["tarifs"] ?>
                         </a></li>
-                    <li><a
-                            href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
-                            <?php echo $lang["reservation"] ?>
+                    <li>
+                        <?php if( $_SESSION["lang"] =="fr")
+                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                        ?>
+                        <?php if( $_SESSION["lang"] =="en")
+                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                        ?>
+                            <?php echo $lang["reservation"];?>
                         </a></li>
                     <li><a href="activites.php">
                             <?php echo $lang["activites"] ?>
@@ -314,7 +336,8 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
+            <li><a
+                    href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
                     <?php echo $lang["reservation"] ?>
                 </a></li>
 

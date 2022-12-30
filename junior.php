@@ -112,7 +112,14 @@ include "config.php"
 
                 }
             })
-            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" })
+            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3);
+                    setTimeout(
+                        function () {
+                            $("#supersized").css({"filter":"grayscale(0%)"})
+                            $(".show").css({"filter":"grayscale(0%)"})
+                            
+                        }
+                        , 2000) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" })
         });
 
     </script>
@@ -176,7 +183,7 @@ include "config.php"
         </div>
         <div class="sous_menu" style="">
             <ul>
-                <li><a href="deluxe.php">Chambre Deluxe</a></li>
+                <li><a href="deluxe.php">Chambres De Luxe  </a></li>
                 <li><a href="junior.php" class="selectedL">Suites Junior</a></li>
                 <li><a href="prestige.php">Suites Prestige</a></li>
             </ul>
@@ -188,7 +195,7 @@ include "config.php"
                     <div class="scroll-pane" style="width:400px;">
                         <p class="localisation-bloc">
                             <a href="ayanae.php">
-                                <img class="full" src="images/chambres/Suite Juniors/AYANAE/1.jpeg"
+                                <img class="full show" src="images/chambres/Suite Juniors/AYANAE/1.jpeg"
                                     srcset="images/chambres/Suite Juniors/AYANAE/1.jpeg" alt="Ayanae" />
                             </a>
                         </p>
@@ -196,7 +203,7 @@ include "config.php"
                         </br>
                         <p class="localisation-bloc">
                             <a href="elouaziria.php">
-                                <img class="full" src="images/chambres/Suite Juniors/EL OUAZIRIA/1.jpeg"
+                                <img class="full show" src="images/chambres/Suite Juniors/EL OUAZIRIA/1.jpeg"
                                     srcset="images/chambres/Suite Juniors/EL OUAZIRIA/1.jpeg" alt="EL OUAZIRIA" />
                             </a>
                         </p>

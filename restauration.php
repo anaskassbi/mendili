@@ -140,19 +140,22 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
                     $(this).addClass('fa-pause');
                     document.getElementById('player').play()
                     $("#play").attr("src", "images/commun/pause.png");
-
-
                 }
                 else {
                     $(this).removeClass('fa-pause');
                     $(this).addClass('fa-play');
                     document.getElementById('player').pause()
                     $("#play").attr("src", "images/commun/play.png");
-
-
                 }
             })
-            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" });
+
+            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3);
+                    setTimeout(
+                        function () {
+                            $("#supersized").css({"filter":"grayscale(0%)"})
+                            $(".show").css({"filter":"grayscale(0%)"})
+                        }
+                        , 2000) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" });
             if (!isMobile) {
                 var a = "0";
                 $("#prevslide").click(function () {
@@ -233,14 +236,14 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
                         <h2><?php echo $lang["downloadVins"]; ?></h2>
                         <p class="localisation-bloc">
                             <a id="btnShow" href="#">
-                                <img src="images/commun/vinsfirstpage.png" srcset="images/commun/vinsfirstpage.png"
+                                <img class="show" src="images/commun/vinsfirstpage.png" srcset="images/commun/vinsfirstpage.png"
                                     alt="localisation" />
                             </a>
                         </p>
                         <h2><?php echo $lang["downloadBar"]; ?></h2>
                         <p class="localisation-bloc">
                             <a id="btnShowBar" href="#">
-                                <img src="images/commun/barfirstpage.png" srcset="images/commun/barfirstpage.png"
+                                <img class="show" src="images/commun/barfirstpage.png" srcset="images/commun/barfirstpage.png"
                                     alt="localisation" />
                             </a>
                         </p>

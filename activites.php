@@ -263,7 +263,14 @@ include "config.php"
             })
 
             $("body").queryLoader2({ 
-                onComplete: function () { $(".preloader").fadeOut(1e3) }, 
+                onComplete: function () { $(".preloader").fadeOut(1e3);
+                    setTimeout(
+                        function () {
+                            $("#supersized").css({"filter":"grayscale(0%)"})
+  
+                            
+                        }
+                        , 2000) }, 
                 barColor: "#000000", 
                 backgroundColor: "#000000", 
                 percentage: false, 

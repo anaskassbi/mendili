@@ -278,7 +278,14 @@ include "config.php"
 
                 }
             })
-            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" })
+            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3);
+                    setTimeout(
+                        function () {
+                            $("#supersized").css({"filter":"grayscale(0%)"})
+                            $(".show").css({"filter":"grayscale(0%)"})
+                            
+                        }
+                        , 2000) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" })
         });
 
 
@@ -353,7 +360,7 @@ include "config.php"
                 <div class="block_txt_center" style="float:left;margin-left:650px; padding:30px 0 0 0;">
                     <div class="scroll-pane">
                         <p>
-                            <iframe
+                            <iframe class="show"
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13607.46820161369!2d-7.879285!3d31.500338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92ee15015cc436b5!2sRiad%20Al%20Mendili%20Private%20Resort%20%26%20Spa!5e0!3m2!1sen!2sfr!4v1671888395611!5m2!1sen!2sfr"
                                 style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -370,7 +377,7 @@ include "config.php"
                                     class="weather-max-temperature"></span>
                                 <span id="minMeteo">Min:</span><span id="tempMeteoL"
                                     class="weather-min-temperaturee"></span>
-                                <img src="" id="iconMeteo" class="weather-icon" alt="Al Mendili" />
+                                <img src="" id="iconMeteo" class="weather-icon show" alt="Al Mendili" />
                             </div>
                         </div>
 
@@ -380,7 +387,7 @@ include "config.php"
                         <p class="localisation-bloc">
                             <a href="https://www.google.com/maps/place/31%C2%B039'56.6%22N+7%C2%B055'03.0%22W/@31.6656785,-7.9176593,17z/data=!4m5!3m4!1s0x0:0x0!8m2!3d31.6657333!4d-7.9175091?hl=fr"
                                 target="_blank">
-                                <img src="images/location/locationbg.png" srcset="images/location/locationbg.png"
+                                <img class="show" src="images/location/locationbg.png" srcset="images/location/locationbg.png"
                                     alt="localisation" />
                             </a>
                         </p>

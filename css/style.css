@@ -30,11 +30,11 @@ body {
 	clear: both
 }
 
-.responsive-menu{
+.responsive-menu {
 	display: none;
 }
 
-.mimages-small{
+.mimages-small {
 	display: none;
 }
 
@@ -83,7 +83,14 @@ body {
 	z-index: -999;
 	height: 100%;
 	width: 100%;
-	background: #000
+	background: #000;
+	filter: grayscale(100%);
+	transition: .5s ease-in-out;
+}
+
+.show{
+	filter: grayscale(100%);
+	transition: .5s ease-in-out;
 }
 
 #supersized img {
@@ -157,6 +164,7 @@ body {
 	font-style: normal
 }
 
+
 .home {
 	width: 100%;
 	z-index: 999;
@@ -167,7 +175,7 @@ body {
 .header {
 	width: 100%;
 	min-width: 100%;
-	z-index: 8
+	z-index: 8;
 }
 
 .div_logo {
@@ -202,7 +210,7 @@ body {
 .menu ul {
 	width: 1200px;
 	height: 36px;
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 .menu ul li a {
@@ -243,7 +251,7 @@ body {
 }
 
 .sous_menu ul {
-	
+
 	width: 510px;
 	height: 28px;
 	margin: 0 auto
@@ -456,7 +464,8 @@ body {
 }
 
 .footer .txt_footer {
-	width: 25%;
+	width: 100%;
+	text-align: center;
 	color: #5b5b5b;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 11px;

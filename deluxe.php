@@ -112,7 +112,15 @@ include "config.php"
 
                 }
             })
-            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" })
+            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3);
+                    setTimeout(
+                        function () {
+                            $("#supersized").css({"filter":"grayscale(0%)"})
+                            $(".show").css({"filter":"grayscale(0%)"})
+  
+                            
+                        }
+                        , 2000) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" })
         });
 
     </script>
@@ -188,7 +196,7 @@ include "config.php"
                         <div style='display: inline-block; vertical-align: top;'>
                             <p class="localisation-bloc">
                                 <a class="room" href="elaskaria.php">
-                                    <img class="full" src="images/chambres/Chambre Deluxe/EL ASKARIA/1.jpeg"
+                                    <img class="full show" src="images/chambres/Chambre Deluxe/EL ASKARIA/1.jpeg"
                                         srcset="images/chambres/Chambre Deluxe/EL ASKARIA/1.jpeg" alt="El Alia" />
                                 </a>
                             </p>
@@ -199,7 +207,7 @@ include "config.php"
                         <div style='display: inline-block; vertical-align: top;'>
                             <p class="localisation-bloc">
                                 <a href="lailasaida.php">
-                                    <img class="full" src="images/chambres/Chambre Deluxe/LAILA SAIDA/1.jpeg"
+                                    <img class="full show" src="images/chambres/Chambre Deluxe/LAILA SAIDA/1.jpeg"
                                         srcset="images/chambres/Chambre Deluxe/LAILA SAIDA/1.jpeg" alt="El Alia" />
                                 </a>
                             </p>
@@ -210,7 +218,7 @@ include "config.php"
                         <div style='display: inline-block; vertical-align: top;'>
                             <p class="localisation-bloc">
                                 <a href="elalia.php">
-                                    <img class="full" src="images/chambres/Chambre Deluxe/EL ALIA/1.jpeg"
+                                    <img class="full show" src="images/chambres/Chambre Deluxe/EL ALIA/1.jpeg"
                                         srcset="images/chambres/Chambre Deluxe/EL ALIA/1.jpeg" alt="El Alia" />
                                 </a>
                             </p>
@@ -221,7 +229,7 @@ include "config.php"
                         <div style='display: inline-block; vertical-align: top;'>
                             <p class="localisation-bloc">
                                 <a href="elamira.php">
-                                    <img class="full" src="images/chambres/Chambre Deluxe/EL AMIRA/1.jpeg"
+                                    <img class="full show" src="images/chambres/Chambre Deluxe/EL AMIRA/1.jpeg"
                                         srcset="images/chambres/Chambre Deluxe/EL Amira/1.jpeg" alt="El Amira" />
                                 </a>
                             </p>
@@ -232,7 +240,7 @@ include "config.php"
                         <div style='display: inline-block; vertical-align: top;'>
                             <p class="localisation-bloc">
                                 <a href="souihla.php">
-                                    <img class="full" src="images/chambres/Chambre Deluxe/SOUHILA/1.jpeg"
+                                    <img class="full show" src="images/chambres/Chambre Deluxe/SOUHILA/1.jpeg"
                                         srcset="images/chambres/Chambre Deluxe/SOUHILA/1.jpeg" alt="Souihla" />
                                 </a>
                             </p>
@@ -243,7 +251,7 @@ include "config.php"
                         <div style='display: inline-block; vertical-align: top;'>
                             <p class="localisation-bloc">
                                 <a href="elyacout.php">
-                                    <img class="full" src="images/chambres/Chambre Deluxe/EL YACOUT/1.jpeg"
+                                    <img class="full show" src="images/chambres/Chambre Deluxe/EL YACOUT/1.jpeg"
                                         srcset="images/chambres/Chambre Deluxe/EL YACOUT/1.jpeg" alt="El Yacout" />
                                 </a>
                             </p>

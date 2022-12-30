@@ -138,7 +138,15 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
 
                 }
             })
-            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" });
+            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3);
+                    setTimeout(
+                        function () {
+                            $("#supersized").css({"filter":"grayscale(0%)"})
+                            $(".show").css({"filter":"grayscale(0%)"})
+
+                            
+                        }
+                        , 2000) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" });
             if (!isMobile) {
                 var a = "0";
                 $("#prevslide").click(function () {
@@ -204,7 +212,7 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
         </div>
         <div class="sous_menu" style="">
             <ul>
-                <li><a href="deluxe.php" class="selectedL">Chambre Deluxe</a></li>
+                <li><a href="deluxe.php" class="selectedL">Chambres De Luxe  </a></li>
                 <li><a href="junior.php">Suites Junior</a></li>
                 <li><a href="prestige.php">Suites Prestige</a></li>
             </ul>
@@ -218,7 +226,7 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
                         <div class="mimages" id="mimages">
                             <a href="images/chambres/Chambre Deluxe/LAILA SAIDA/1.jpeg" class="lsb-preview &quot2&quot"
                                 data-lsb-group="gallery1" id="gallery">
-                                <img src="images/bg/chambres/lailasaida.png" class="mosaique" alt=""
+                                <img src="images/bg/chambres/lailasaida.png" class="mosaique show" alt=""
                                     width="328" height="240">
                             </a>
 

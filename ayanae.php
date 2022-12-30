@@ -136,7 +136,15 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
 
                 }
             })
-            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" });
+            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3);
+                    setTimeout(
+                        function () {
+                            $("#supersized").css({"filter":"grayscale(0%)"})
+                            $(".show").css({"filter":"grayscale(0%)"})
+
+                            
+                        }
+                        , 2000) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" });
             
         });
 
@@ -185,7 +193,7 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
         </div>
         <div class="sous_menu" style="">
             <ul>
-                <li><a href="deluxe.php">Chambre Deluxe</a></li>
+                <li><a href="deluxe.php">Chambres De Luxe  </a></li>
                 <li><a href="junior.php" class="selectedL">Suites Junior</a></li>
                 <li><a href="prestige.php">Suites Prestige</a></li>
             </ul>
@@ -199,7 +207,7 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
                         <div class="mimages" id="mimages">
                             <a href="images/chambres/Suite Juniors/AYANAE/1.jpeg" class="lsb-preview &quot2&quot"
                                 data-lsb-group="gallery1" id="gallery">
-                                <img src="images/bg/chambres/aynae.png" class="mosaique" alt=""
+                                <img src="images/bg/chambres/aynae.png" class="mosaique show" alt=""
                                     width="328" height="240">
                             </a>
                         </div>

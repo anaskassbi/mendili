@@ -260,7 +260,14 @@ include "config.php"
 
                 }
             })
-            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" })
+            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3);
+                    setTimeout(
+                        function () {
+                            $("#supersized").css({"filter":"grayscale(0%)"})
+                            $(".show").css({"filter":"grayscale(0%)"})
+                            
+                        }
+                        , 2000) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" })
         });
 
 
@@ -382,7 +389,7 @@ include "config.php"
                         <?php echo $lang["conditions"] ?>
                         <?php echo $lang["paiementText"] ?>
                         <p class="localisation-bloc">
-                            <img src="images/commun/paiement.png" srcset="images/commun/paiement.png"
+                            <img class="show" src="images/commun/paiement.png" srcset="images/commun/paiement.png"
                                 alt="localisation" />
                         </p>
                         <div class="whats_up">
