@@ -146,7 +146,7 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
                     }
                 });
 
-                setTimeout('$(".slide-0 a img").attr("src", "images/acceuil/1.jpg")', 7800);
+                setTimeout('$(".slide-0 a img").attr("src", "images/bg/acceuil/1.jpg")', 7800);
             }
         });
 
@@ -172,7 +172,7 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
                     <li><a href="spa.php">
                             <?php echo $lang["spa"] ?>
                         </a></li>
-                    <li><a href="restauration.php" class="selectedL">
+                    <li><a href="restauration.php">
                             <?php echo $lang["restauration"] ?>
                         </a></li>
                     <li><a href="tarifs.php">
