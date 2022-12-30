@@ -192,20 +192,16 @@ include "config.php"
                                     srcset="images/chambres/Suite Juniors/AYANAE/1.jpeg" alt="Ayanae" />
                             </a>
                         </p>
-                        <div class="conditions">
-                            <h2>AYANAE</h2>
-
-                        </div>
+                        <h2>AYANAE</h2>
+                        </br>
                         <p class="localisation-bloc">
                             <a href="elouaziria.php">
                                 <img class="full" src="images/chambres/Suite Juniors/EL OUAZIRIA/1.jpeg"
                                     srcset="images/chambres/Suite Juniors/EL OUAZIRIA/1.jpeg" alt="EL OUAZIRIA" />
                             </a>
                         </p>
-                        <div class="conditions">
-                            <h2>EL OUAZIRIA</h2>
-
-                        </div>
+                        <h2>EL OUAZIRIA</h2>
+                        </br></br>
                     </div>
                 </div>
             </div>
@@ -273,7 +269,8 @@ include "config.php"
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
+            <li><a
+                    href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
                     <?php echo $lang["reservation"] ?>
                 </a></li>
 
