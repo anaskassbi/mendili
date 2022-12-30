@@ -9,7 +9,7 @@ include "config.php"
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>galerie360</title>
     <meta name="description"
-        content="Idéalement située dans un domaine privé de la Palmeraie de Marrakech, la villa Serout Jenna vous offre une vue unique sur les montagnes de l’Atlas. Vous profitez ainsi d’un cadre exceptionnel, propice au calme et à la sérénité à quelques kilomètres des golfs de Marrakech." />
+        content="Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad." />
     <link rel="shortcut icon" href=",/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>

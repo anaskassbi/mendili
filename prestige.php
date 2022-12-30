@@ -10,7 +10,7 @@ include "config.php"
     <title>Al Mendili Suites prestige</title>
 
     <meta name="description"
-        content="Vous souhaitez louer une villa d'exception à Marrakech ? Située dans le domaine privé de Bab Atlas dans la Palmeraie de Marrakech, la villa de luxe Serout Jenna propose à ses hôtes un service personnalisé et haut de gamme." />
+        content="Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad." />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>

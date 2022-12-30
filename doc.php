@@ -9,7 +9,7 @@ include "config.php"
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Activités</title>
     <meta name="description"
-        content="Découvrez les dernières actualités de Marrakech ainsi que les conditions générales de vente de la villa d’exception Serout Jenna à Marrakech." />
+        content="Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad." />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>

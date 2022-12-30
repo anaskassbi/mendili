@@ -9,7 +9,7 @@ include "config.php"
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Déscriptif</title>
     <meta name="description"
-        content="En location exclusive à Marrakech, la villa Serout Jenna d’une superficie de 900 m² vous offre des prestations luxueuses pour un séjour réussi dans la Palmeraie de Marrakech." />
+        content="Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad." />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
