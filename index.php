@@ -133,9 +133,9 @@ include "config.php"
                     $(".preloader").fadeOut(1e3);
                     setTimeout(
                         function () {
-                            $("#supersized").css({"filter":"grayscale(0%)"})
-  
-                            
+                            $("#supersized").css({ "filter": "grayscale(0%)" })
+
+
                         }
                         , 2000)
                 },
@@ -196,13 +196,13 @@ include "config.php"
                             <?php echo $lang["tarifs"] ?>
                         </a></li>
                     <li>
-                        <?php if( $_SESSION["lang"] =="fr")
+                        <?php if ($_SESSION["lang"] == "fr")
                             echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
-                        ?>
-                        <?php if( $_SESSION["lang"] =="en")
+                            ?>
+                        <?php if ($_SESSION["lang"] == "en")
                             echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
-                        ?>
-                            <?php echo $lang["reservation"];?>
+                            ?>
+                        <?php echo $lang["reservation"]; ?>
                         </a></li>
                     <li><a href="activites.php">
                             <?php echo $lang["activites"] ?>
@@ -336,9 +336,14 @@ include "config.php"
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a
-                    href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
-                    <?php echo $lang["reservation"] ?>
+            <li>
+                <?php if ($_SESSION["lang"] == "fr")
+                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                    ?>
+                <?php if ($_SESSION["lang"] == "en")
+                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                    ?>
+                <?php echo $lang["reservation"]; ?>
                 </a></li>
 
 

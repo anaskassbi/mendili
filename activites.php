@@ -262,21 +262,24 @@ include "config.php"
                 }
             })
 
-            $("body").queryLoader2({ 
-                onComplete: function () { $(".preloader").fadeOut(1e3);
+            $("body").queryLoader2({
+                onComplete: function () {
+                    $(".preloader").fadeOut(1e3);
                     setTimeout(
                         function () {
-                            $("#supersized").css({"filter":"grayscale(0%)"})
-  
-                            
+                            $("#supersized").css({ "filter": "grayscale(0%)" })
+
+
                         }
-                        , 2000) }, 
-                barColor: "#000000", 
-                backgroundColor: "#000000", 
-                percentage: false, 
-                barHeight: 1, 
-                completeAnimation: "fade" })
-                
+                        , 2000)
+                },
+                barColor: "#000000",
+                backgroundColor: "#000000",
+                percentage: false,
+                barHeight: 1,
+                completeAnimation: "fade"
+            })
+
         });
 
 
@@ -327,8 +330,14 @@ include "config.php"
                     <li><a href="tarifs.php">
                             <?php echo $lang["tarifs"] ?>
                         </a></li>
-                    <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
-                            <?php echo $lang["reservation"] ?>
+                    <li>
+                        <?php if ($_SESSION["lang"] == "fr")
+                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                            ?>
+                        <?php if ($_SESSION["lang"] == "en")
+                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                            ?>
+                        <?php echo $lang["reservation"]; ?>
                         </a></li>
                     <li><a href="activites.php" class="selectedL">
                             <?php echo $lang["activites"] ?>
@@ -343,7 +352,7 @@ include "config.php"
             </div>
             <div class="langue"><a href="?lang=fr">FR</a><span style="color:#7A7A7A;font-family:arial;font-size:12px;">
                     | </span> <a href="?lang=en">EN</a></div>
-            
+
         </div>
 
         <div class="center">
@@ -420,8 +429,14 @@ include "config.php"
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
-                    <?php echo $lang["reservation"] ?>
+            <li>
+                <?php if ($_SESSION["lang"] == "fr")
+                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                    ?>
+                <?php if ($_SESSION["lang"] == "en")
+                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                    ?>
+                <?php echo $lang["reservation"]; ?>
                 </a></li>
 
 
@@ -433,9 +448,9 @@ include "config.php"
             <li>
                 <?php echo $lang["galerie"] ?>
                 <ul>
-                     <li><a href="galerieInterieur.php"><?php echo $lang["interieur"]; ?></a></li>
-                <li><a href="galerieExterieur.php" ><?php echo $lang["exterieur"]; ?></a></li>
-                <li><a href="galerie360.php"><?php echo $lang["en360"]; ?></a></li>
+                    <li><a href="galerieInterieur.php"><?php echo $lang["interieur"]; ?></a></li>
+                    <li><a href="galerieExterieur.php"><?php echo $lang["exterieur"]; ?></a></li>
+                    <li><a href="galerie360.php"><?php echo $lang["en360"]; ?></a></li>
                 </ul>
             </li>
 
@@ -446,8 +461,8 @@ include "config.php"
 
         </ul>
         <div class="langue"><a href="index.php?lang=fr">FR</a><span
-                style="color:#7A7A7A;font-family:arial;font-size:12px;"> | </span> <a
-                href="index.php?lang=en">EN</a></div>
+                style="color:#7A7A7A;font-family:arial;font-size:12px;"> | </span> <a href="index.php?lang=en">EN</a>
+        </div>
     </div>
 </body>
 

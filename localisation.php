@@ -104,9 +104,9 @@ include "config.php"
                     $(".preloader").fadeOut(1e3);
                     setTimeout(
                         function () {
-                            $("#supersized").css({"filter":"grayscale(0%)"})
-                            $(".show").css({"filter":"grayscale(0%)"})
-                            
+                            $("#supersized").css({ "filter": "grayscale(0%)" })
+                            $(".show").css({ "filter": "grayscale(0%)" })
+
                         }
                         , 2000)
                 }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade"
@@ -159,9 +159,14 @@ include "config.php"
                     <li><a href="tarifs.php">
                             <?php echo $lang["tarifs"] ?>
                         </a></li>
-                    <li><a
-                            href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
-                            <?php echo $lang["reservation"] ?>
+                    <li>
+                        <?php if ($_SESSION["lang"] == "fr")
+                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                            ?>
+                        <?php if ($_SESSION["lang"] == "en")
+                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                            ?>
+                        <?php echo $lang["reservation"]; ?>
                         </a></li>
                     <li><a href="activites.php">
                             <?php echo $lang["activites"] ?>
@@ -202,7 +207,7 @@ include "config.php"
                         echo $lang["localisationText"]
                             ?>
                         <p>
-                        <iframe class="show"
+                            <iframe class="show"
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13607.46820161369!2d-7.879285!3d31.500338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92ee15015cc436b5!2sRiad%20Al%20Mendili%20Private%20Resort%20%26%20Spa!5e0!3m2!1sen!2sfr!4v1671888395611!5m2!1sen!2sfr"
                                 style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -278,11 +283,15 @@ include "config.php"
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
-                    <?php echo $lang["reservation"] ?>
+            <li>
+                <?php if ($_SESSION["lang"] == "fr")
+                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                    ?>
+                <?php if ($_SESSION["lang"] == "en")
+                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                    ?>
+                <?php echo $lang["reservation"]; ?>
                 </a></li>
-
-
             <li>
                 <a href="activites.php"><?php echo $lang["activites"] ?></a>
 

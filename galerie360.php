@@ -103,9 +103,9 @@ include "config.php"
                     $(".preloader").fadeOut(1e3);
                     setTimeout(
                         function () {
-                            $("#supersized").css({"filter":"grayscale(0%)"})
-                            $(".show").css({"filter":"grayscale(0%)"})
-                            
+                            $("#supersized").css({ "filter": "grayscale(0%)" })
+                            $(".show").css({ "filter": "grayscale(0%)" })
+
                         }
                         , 2000)
                 }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade"
@@ -158,9 +158,14 @@ include "config.php"
                     <li><a href="tarifs.php">
                             <?php echo $lang["tarifs"] ?>
                         </a></li>
-                    <li><a
-                            href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
-                            <?php echo $lang["reservation"] ?>
+                    <li>
+                        <?php if ($_SESSION["lang"] == "fr")
+                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                            ?>
+                        <?php if ($_SESSION["lang"] == "en")
+                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                            ?>
+                        <?php echo $lang["reservation"]; ?>
                         </a></li>
                     <li><a href="activites.php">
                             <?php echo $lang["activites"] ?>
@@ -185,19 +190,19 @@ include "config.php"
         </div>
 
 
-      
+
 
         <div class="center">
             <div class="center_txt">
                 <div class="block_txt_center" style="float:left;margin-left:650px; padding:30px 0 0 0;">
                     <div class="scroll-pane">
                         <h2 style=" margin: 10px;">Visite 360° intérieur</h2>
-                        <iframe class="show" width="100%" height="100%" src="https://my.matterport.com/show/?m=robytXSBNQZ"
-                            allowfullscreen></iframe>
+                        <iframe class="show" width="100%" height="100%"
+                            src="https://my.matterport.com/show/?m=robytXSBNQZ" allowfullscreen></iframe>
                         <br>
                         <h2 style=" margin: 10px;">Visite 360° extérieur</h2>
-                        <iframe class="show" width="100%" height="100%" src="https://my.matterport.com/show/?m=BBHBhvdmnCV"
-                            allowfullscreen></iframe>
+                        <iframe class="show" width="100%" height="100%"
+                            src="https://my.matterport.com/show/?m=BBHBhvdmnCV" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -267,8 +272,14 @@ include "config.php"
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
-                    <?php echo $lang["reservation"] ?>
+            <li>
+                <?php if ($_SESSION["lang"] == "fr")
+                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                    ?>
+                <?php if ($_SESSION["lang"] == "en")
+                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                    ?>
+                <?php echo $lang["reservation"]; ?>
                 </a></li>
 
 

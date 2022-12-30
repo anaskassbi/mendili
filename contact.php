@@ -278,14 +278,18 @@ include "config.php"
 
                 }
             })
-            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3);
+            $("body").queryLoader2({
+                onComplete: function () {
+                    $(".preloader").fadeOut(1e3);
                     setTimeout(
                         function () {
-                            $("#supersized").css({"filter":"grayscale(0%)"})
-                            $(".show").css({"filter":"grayscale(0%)"})
-                            
+                            $("#supersized").css({ "filter": "grayscale(0%)" })
+                            $(".show").css({ "filter": "grayscale(0%)" })
+
                         }
-                        , 2000) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" })
+                        , 2000)
+                }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade"
+            })
         });
 
 
@@ -336,9 +340,14 @@ include "config.php"
                     <li><a href="tarifs.php">
                             <?php echo $lang["tarifs"] ?>
                         </a></li>
-                    <li><a
-                            href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
-                            <?php echo $lang["reservation"] ?>
+                    <li>
+                        <?php if ($_SESSION["lang"] == "fr")
+                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                            ?>
+                        <?php if ($_SESSION["lang"] == "en")
+                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                            ?>
+                        <?php echo $lang["reservation"]; ?>
                         </a></li>
                     <li><a href="activites.php">
                             <?php echo $lang["activites"] ?>
@@ -387,8 +396,8 @@ include "config.php"
                         <p class="localisation-bloc">
                             <a href="https://www.google.com/maps/place/31%C2%B039'56.6%22N+7%C2%B055'03.0%22W/@31.6656785,-7.9176593,17z/data=!4m5!3m4!1s0x0:0x0!8m2!3d31.6657333!4d-7.9175091?hl=fr"
                                 target="_blank">
-                                <img class="show" src="images/location/locationbg.png" srcset="images/location/locationbg.png"
-                                    alt="localisation" />
+                                <img class="show" src="images/location/locationbg.png"
+                                    srcset="images/location/locationbg.png" alt="localisation" />
                             </a>
                         </p>
                     </div>
@@ -457,8 +466,14 @@ include "config.php"
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
-                    <?php echo $lang["reservation"] ?>
+            <li>
+                <?php if ($_SESSION["lang"] == "fr")
+                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                    ?>
+                <?php if ($_SESSION["lang"] == "en")
+                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                    ?>
+                <?php echo $lang["reservation"]; ?>
                 </a></li>
 
 

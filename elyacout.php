@@ -8,8 +8,9 @@ include "config.php"
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>EL YACOUT</title>
-    <meta name="description"
-Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad.    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="description" Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous
+        accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad. <link rel="shortcut icon"
+        href="/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript">
@@ -96,7 +97,7 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
     <script type="text/javascript">
         var images = []
         var html = ""
-        for (i=1; i < 4; i++) {
+        for (i = 1; i < 4; i++) {
             images.push({ image: "images/chambres/Chambre Deluxe/EL YACOUT/" + i + ".jpeg" })
             html += "<a href='./images/chambres/Chambre Deluxe/EL YACOUT/" + i + ".jpeg'  class='lsb-preview'" +
                 "data-lsb-group='gallery1' style='display:none'>" +
@@ -137,15 +138,19 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
 
                 }
             })
-            $("body").queryLoader2({ onComplete: function () { $(".preloader").fadeOut(1e3);
+            $("body").queryLoader2({
+                onComplete: function () {
+                    $(".preloader").fadeOut(1e3);
                     setTimeout(
                         function () {
-                            $("#supersized").css({"filter":"grayscale(0%)"})
-                            $(".show").css({"filter":"grayscale(0%)"})
+                            $("#supersized").css({ "filter": "grayscale(0%)" })
+                            $(".show").css({ "filter": "grayscale(0%)" })
 
-                            
+
                         }
-                        , 2000) }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade" });
+                        , 2000)
+                }, barColor: "#000000", backgroundColor: "#000000", percentage: false, barHeight: 2, completeAnimation: "fade"
+            });
             if (!isMobile) {
                 var a = "0";
                 $("#prevslide").click(function () {
@@ -191,8 +196,14 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
                     <li><a href="tarifs.php">
                             <?php echo $lang["tarifs"] ?>
                         </a></li>
-                    <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
-                            <?php echo $lang["reservation"] ?>
+                    <li>
+                        <?php if ($_SESSION["lang"] == "fr")
+                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                            ?>
+                        <?php if ($_SESSION["lang"] == "en")
+                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                            ?>
+                        <?php echo $lang["reservation"]; ?>
                         </a></li>
                     <li><a href="activites.php">
                             <?php echo $lang["activites"] ?>
@@ -210,7 +221,7 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
         </div>
         <div class="sous_menu" style="">
             <ul>
-                <li><a href="deluxe.php" class="selectedL">Chambres De Luxe  </a></li>
+                <li><a href="deluxe.php" class="selectedL">Chambres De Luxe </a></li>
                 <li><a href="junior.php">Suites Junior</a></li>
                 <li><a href="prestige.php">Suites Prestige</a></li>
             </ul>
@@ -224,8 +235,8 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
                         <div class="mimages" id="mimages">
                             <a href="images/chambres/Chambre Deluxe/EL YACOUT/1.jpeg" class="lsb-preview &quot2&quot"
                                 data-lsb-group="gallery1" id="gallery">
-                                <img src="images/bg/chambres/yacout.png" class="mosaique show" alt=""
-                                    width="328" height="240">
+                                <img src="images/bg/chambres/yacout.png" class="mosaique show" alt="" width="328"
+                                    height="240">
                             </a>
                         </div>
                     </div>
@@ -293,8 +304,14 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
             <li><a href="tarifs.php">
                     <?php echo $lang["tarifs"] ?>
                 </a></li>
-            <li><a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">
-                    <?php echo $lang["reservation"] ?>
+            <li>
+                <?php if ($_SESSION["lang"] == "fr")
+                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                    ?>
+                <?php if ($_SESSION["lang"] == "en")
+                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                    ?>
+                <?php echo $lang["reservation"]; ?>
                 </a></li>
 
 
@@ -306,9 +323,9 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
             <li>
                 <?php echo $lang["galerie"] ?>
                 <ul>
-                     <li><a href="galerieInterieur.php"><?php echo $lang["interieur"]; ?></a></li>
-                <li><a href="galerieExterieur.php" ><?php echo $lang["exterieur"]; ?></a></li>
-                <li><a href="galerie360.php"><?php echo $lang["en360"]; ?></a></li>
+                    <li><a href="galerieInterieur.php"><?php echo $lang["interieur"]; ?></a></li>
+                    <li><a href="galerieExterieur.php"><?php echo $lang["exterieur"]; ?></a></li>
+                    <li><a href="galerie360.php"><?php echo $lang["en360"]; ?></a></li>
                 </ul>
             </li>
 
@@ -319,8 +336,8 @@ Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et A
 
         </ul>
         <div class="langue"><a href="index.php?lang=fr">FR</a><span
-                style="color:#7A7A7A;font-family:arial;font-size:12px;"> | </span> <a
-                href="index.php?lang=en">EN</a></div>
+                style="color:#7A7A7A;font-family:arial;font-size:12px;"> | </span> <a href="index.php?lang=en">EN</a>
+        </div>
     </div>
 </body>
 
