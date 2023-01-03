@@ -99,7 +99,7 @@ include "config.php"
     <script type="text/javascript">
         var images = []
         var html = ""
-        for (i = 1; i < 10; i++) {
+        for (i = 1; i <=8; i++) {
             images.push({ image: "images/bg/interieur/" + i + ".jpg" })
             html += "<a href='./images/bg/interieur/" + i + ".jpg' style='display:none' class='lsb-preview'" +
                 "data-lsb-group='gallery1'>" +
@@ -218,7 +218,7 @@ include "config.php"
                     <div class="scroll-pane" style="width:390px;">
                         <?php echo $lang["galerieinterieurText"]; ?>
                         <div class="mimages" id="mimages">
-                            <a href="images/bg/interieur/1.jpg" class="lsb-preview &quot2&quot"
+                            <a href="images/bg/interieur/9.jpg" class="lsb-preview &quot2&quot"
                                 data-lsb-group="gallery1" id="gallery">
                                 <img class="show" src="images/bg/interieur.png" class="mosaique" alt="" width="328"
                                     height="240">

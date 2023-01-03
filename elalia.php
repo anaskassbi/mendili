@@ -95,7 +95,7 @@
     <script type="text/javascript">
         var images = []
         var html = ""
-        for (i = 1; i < 4; i++) {
+        for (i = 1; i <=2; i++) {
             images.push({ image: "images/chambres/Chambre Deluxe/EL ALIA/" + i + ".jpeg" })
             html += "<a href='./images/chambres/Chambre Deluxe/EL ALIA/" + i + ".jpeg'  class='lsb-preview'" +
                 "data-lsb-group='gallery1' style='display:none'>" +
@@ -233,7 +233,7 @@
                         <h2 style="margin-top: 70px; font-size: 24px;">EL ALIA</h2>
                         <?php echo $lang["elalia"] ?>
                         <div class="mimages" id="mimages">
-                            <a href="images/chambres/Chambre Deluxe/EL ALIA/1.jpeg" class="lsb-preview &quot2&quot"
+                            <a href="images/chambres/Chambre Deluxe/EL ALIA/3.jpeg" class="lsb-preview &quot2&quot"
                                 data-lsb-group="gallery1" id="gallery">
                                 <img src="images/bg/chambres/elalia.png" class="mosaique show" alt="" width="328"
                                     height="240">

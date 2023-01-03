@@ -101,7 +101,7 @@ include "config.php"
     <script type="text/javascript">
         var images = []
         var html = ""
-        for (i = 1; i < 4; i++) {
+        for (i = 1; i <=2; i++) {
             images.push({ image: "images/chambres/Chambre Deluxe/EL ASKARIA/" + i + ".jpeg" })
             html += "<a href='./images/chambres/Chambre Deluxe/EL ASKARIA/" + i + ".jpeg'  class='lsb-preview'" +
                 "data-lsb-group='gallery1' style='display:none'>" +
@@ -240,7 +240,7 @@ include "config.php"
                         echo $lang["elaskaria"]
                             ?>
                         <div class="mimages" id="mimages">
-                            <a href="images/chambres/Chambre Deluxe/EL ASKARIA/1.jpeg" class="lsb-preview &quot2&quot"
+                            <a href="images/chambres/Chambre Deluxe/EL ASKARIA/3.jpeg" class="lsb-preview &quot2&quot"
                                 data-lsb-group="gallery1" id="gallery">
                                 <img src="images/bg/chambres/askaria.png" class="mosaique show" alt="" width="328"
                                     height="240">

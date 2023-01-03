@@ -97,7 +97,7 @@ include "config.php"
     <script type="text/javascript">
         var images = []
         var html = ""
-        for (i = 1; i < 6; i++) {
+        for (i = 1; i <=4; i++) {
             images.push({ image: "images/chambres/Suite Prestige/CHAAR EL ASSEL/" + i + ".jpeg" })
             html += "<a href='./images/chambres/Suite Prestige/CHAAR EL ASSEL/" + i + ".jpeg'  class='lsb-preview'" +
                 "data-lsb-group='gallery1' style='display:none'>" +
@@ -232,7 +232,7 @@ include "config.php"
                         <h2 style="margin-top: 70px; font-size: 24px;"> CHAÂR EL ASSEL </h2>
                         <?php echo $lang["chaarelassel"] ?>
                         <div class="mimages" id="mimages">
-                            <a href="images/chambres/Suite Prestige/CHAAR EL ASSEL/1.jpeg"
+                            <a href="images/chambres/Suite Prestige/CHAAR EL ASSEL/5.jpeg"
                                 class="lsb-preview &quot2&quot" data-lsb-group="gallery1" id="gallery">
                                 <img src="images/bg/chambres/assel.png" class="mosaique show" alt="" width="328"
                                     height="240">

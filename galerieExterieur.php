@@ -102,7 +102,7 @@ include "config.php"
 
         var images = []
         var html = ""
-        for (i = 1; i < 6; i++) {
+        for (i = 1; i <=4; i++) {
             images.push({ image: "images/bg/exterieur/" + i + ".jpg" })
             html += "<a href='./images/bg/exterieur/" + i + ".jpg' style='display:none' class='lsb-preview'" +
                 "data-lsb-group='gallery1'>" +
@@ -240,7 +240,7 @@ include "config.php"
                     <div class="scroll-pane" style="width:390px;">
                         <?php echo $lang["galerieexterieurText"]; ?>
                         <div class="mimages" id="mimages">
-                            <a href="images/bg/exterieur/1.jpg" class="lsb-preview &quot2&quot"
+                            <a href="images/bg/exterieur/5.jpg" class="lsb-preview &quot2&quot"
                                 data-lsb-group="gallery1" id="gallery">
                                 <img class="show" src="images/bg/exterieur.png" class="mosaique" alt=""
                                     style="width:100%;">
