@@ -10,7 +10,7 @@ include "config.php"
     <title>galerie360</title>
     <meta name="description"
         content="Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad." />
-    <link rel="shortcut icon" href=",/favicon.ico" />
+    <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript">
