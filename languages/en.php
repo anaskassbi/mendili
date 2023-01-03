@@ -142,7 +142,7 @@ $lang = array(
     <ul>
     <li>Double Junior Suite located on the ground floor,</li>
     <li>Surface: 40 m2, King size bed (180×200),</li>
-    <li>Air conditioning/heating, Fan,<li>
+    <li>Air conditioning/heating, Fan,</li>
     <li>LCD satellite cable TV, Speaker for MP3 player on request, DVD player on request,</li>
     <li>Desk, Safe, Hairdryer available, Room service telephone, High-speed Wi-Fi,</li>
     <li>Dressing room, Living room with fireplace, Marble and Tadelakt bathroom with bathtub,</li>
@@ -238,7 +238,7 @@ $lang = array(
          <li>Personalized airport transfer on request (round trip), free beyond
              three
              nights booked direct.</li>
-         <li>Possibility to privatize the Kasbah Al Mendili. Prices on request.</li>
+         <li>Possibility to privatize the Riad Al Mendili. Prices on request.</li>
          <li>Pets are allowed on request.</li>
      </ul>",
     "conditions" => "
@@ -284,8 +284,12 @@ $lang = array(
     <li><a style='color:#c5c5c5' href='https://www.alliances.co.ma'>AL MAADEN GOLF RESORTS</a> </li>
     <li><a style='color:#c5c5c5' href='www.assoufid.com'> GOLF ASSOUFID </a></li>
     </ul>
-    <p>Other activities and leisure Visits to tourist sites and discoveries in the region: Camel rides, horse riding Tailor-made excursions Hot air balloon, zip line, Quad hike, Buggy, etc.</p>
-    "
+    <h2 style='margin-top: 20px; font-size: 24px;'>Other activities and hobbies:</h2>
+    <ul>
+    <li>Visits to tourist sites and discoveries in the region,</li>
+    <li>Camel rides, horse riding,</li>
+    <li>A la carte excursions Hot air balloon, zip line, Quad biking, Buggy…</li>
+    </ul>    "
 
 );
 ?>

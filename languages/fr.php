@@ -7,12 +7,12 @@ $lang = array(
     "tarifs" => "TARIFS",
     "reservation" => "RÉSERVATIONS",
     "activites" => "ACTIVITÉS",
-    "galerie" => "GALERIES PHOTO",
+    "galerie" => "GALERIES PHOTOS",
     "contact" => "INFORMATIONS & CONTACT",
     "bienvenue" => "Bienvenue",
     "localisation" => "Localisation",
-    "descriptif" => "Déscriptif",
-    "prestation" => "Préstations",
+    "descriptif" => "Descriptif",
+    "prestation" => "Prestations",
     "interieur" => "Al Mendili de l'interieur",
     "exterieur" => "Al Mendili de l'exterieur",
     "en360" => "Al Mendili en 360",
@@ -62,7 +62,7 @@ $lang = array(
     ",
     "souihla" => "
     <ul>
-    <li>Chambre De luxe double située à rez-de-chaussée,</li>
+    <li>Chambre Deluxe double située à rez-de-chaussée,</li>
     <li>Surface : 30 m2,</li>
     <li>Lit king size (180×200),</li>
     <li>Climatisation/chauffage, ventilateur,</li>
@@ -77,7 +77,7 @@ $lang = array(
     ",
     "elyacout" => "
     <ul>
-    <li>Chambre De luxe double située à rez-de-chaussée,</li>
+    <li>Chambre Deluxe double située à rez-de-chaussée,</li>
     <li>Surface : 30 m2, Lit king size (180×200) ou 2 lits séparés (sur demande à la réservation),</li>
     <li>Climatisation/chauffage, Ventilateur,</li>
     <li>Télé LCD câble satellite, Enceinte pour lecteur MP3 sur demande, Lecteur DVD sur demande,</li>
@@ -90,7 +90,7 @@ $lang = array(
     </ul>",
     "elaskaria" => "
     <ul>
-    <li>Chambre De luxe double située à l’étage,</li>
+    <li>Chambre Deluxe double située à l’étage,</li>
     <li>Surface : 30 m2,</li>
     <li>Lit king size (180×200),</li>
     <li>Climatisation/chauffage, Ventilateur,</li>
@@ -102,7 +102,7 @@ $lang = array(
     </ul>",
     "lailasaida" => "
     <ul>
-    <li>Chambre De luxe double située à l’étage : </li>
+    <li>Chambre Deluxe double située à l’étage : </li>
     <li>Surface : 30 m2, </li>
     <li>Lit king size (180×200) ou 2 lits séparés (sur demande à la réservation), </li>
     <li>Climatisation/chauffage, Ventilateur, </li>
@@ -117,7 +117,7 @@ $lang = array(
     ",
     "elalia" => "
     <ul>
-    <li>Chambre de luxe double située à l’étage,</li>
+    <li>Chambre Deluxe double située à l’étage,</li>
     <li>Surface : 30 m2,</li>
     <li>Lit king size (180×200) ou 2 lits séparés (sur demande à la réservation),</li>
     <li>Climatisation/chauffage, Ventilateur,</li>
@@ -129,7 +129,7 @@ $lang = array(
     </ul>",
     "elamira" => "
     <ul>
-    <li>Chambre de luxe double située à l’étage,</li>
+    <li>Chambre Deluxe double située à l’étage,</li>
     <li>Surface : 30 m2,</li>
     <li>Lit king size (180×200),</li>
     <li>Climatisation/chauffage, Ventilateur,</li>
@@ -143,7 +143,7 @@ $lang = array(
     <ul>
     <li>Suite Junior double située à rez-de-chaussée,</li>
     <li>Surface : 40 m2, Lit king size (180×200),</li>
-    <li>Climatisation/chauffage, Ventilateur,<li>
+    <li>Climatisation/chauffage, Ventilateur,</li>
     <li>Télé LCD câble satellite, Enceinte pour lecteur MP3 sur demande, Lecteur DVD sur demande,</li>
     <li>Bureau, Coffre-fort, Sèche-cheveux à disposition, Téléphone « room service », Wifi haut débit,</li>
     <li>Dressing, Salon cheminée, Salle de bains en marbre et Tadelakt avec baignoire,</li>
@@ -239,7 +239,7 @@ $lang = array(
         <li>Transfert aéroport personnalisé sur demande (aller/retour), offert au-delà de
             trois
             nuits réservées en direct.</li>
-        <li>Possibilité de privatiser la Kasbah Al Mendili. Tarifs sur devis.</li>
+        <li>Possibilité de privatiser le Riad Al Mendili. Tarifs sur devis.</li>
         <li>Les animaux sont admis sur demande.</li>
     </ul>",
     "conditions" => "
@@ -283,7 +283,12 @@ $lang = array(
     <li><a style='color:#c5c5c5' href ='https://www.alliances.co.ma'>AL MAADEN GOLF RESORTS</a> </li>
     <li><a style='color:#c5c5c5' href='www.assoufid.com'> GOLF ASSOUFID </a></li>
     </ul>
-    <p>Autres activités et loisirs Visites des lieux touristiques et découvertes de la région : Promenades à dos de chameau, équitation Excursions à la carte Montgolfière, tyrolienne, randonnée Quad, Buggy …</p>
+    <h2 style='margin-top: 20px; font-size: 24px;'>Autres activités et loisirs :</h2>
+    <ul>
+    <li>Visites des lieux touristiques et découvertes de la région,</li>
+    <li>Promenades à dos de chameau, équitation,</li>
+    <li>Excursions à la carte Montgolfière, tyrolienne, randonnée Quad, Buggy …</li>
+    </ul>
     "
 );
 ?>
