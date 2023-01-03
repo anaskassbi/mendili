@@ -235,7 +235,7 @@
                         <div class="mimages" id="mimages">
                             <a href="images/chambres/Chambre Deluxe/EL ALIA/1.jpeg" class="lsb-preview &quot2&quot"
                                 data-lsb-group="gallery1" id="gallery">
-                                <img src="images/bg/chambres/elALIA.png" class="mosaique show" alt="" width="328"
+                                <img src="images/bg/chambres/elalia.png" class="mosaique show" alt="" width="328"
                                     height="240">
                             </a>
 
