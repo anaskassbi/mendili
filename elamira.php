@@ -6,9 +6,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>EL AMIRA</title>
-    <meta name="description" Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous
-        accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad. <link rel="shortcut icon"
-        href="/favicon.ico" />
+    <meta name="description"
+        content="Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad." />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript">
@@ -60,10 +60,10 @@
     <meta name="viewport" content="width=device-width" />
     <?php
     if ($_SESSION["small"] == 1) {
-    ?>
-    <link rel="stylesheet" href="css/small.css" type="text/css" />
-    <script type="text/javascript" src="js/mobile.js"></script>
-    <?php
+        ?>
+        <link rel="stylesheet" href="css/small.css" type="text/css" />
+        <script type="text/javascript" src="js/mobile.js"></script>
+        <?php
     } ?>
     <style>
         .mimages {
@@ -197,13 +197,14 @@
                         </a></li>
                     <li>
                         <?php if ($_SESSION["lang"] == "fr")
-                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                        echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
                             ?>
                         <?php if ($_SESSION["lang"] == "en")
-                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                        echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
                             ?>
                         <?php echo $lang["reservation"]; ?>
-                        </a></li>
+                        </a>
+                    </li>
                     <li><a href="activites.php">
                             <?php echo $lang["activites"] ?>
                         </a></li>
@@ -249,7 +250,7 @@
             <?php echo $lang["droits"] ?>
         </div>
     </div>
-    
+
     <audio style="display: none;" id="player" src="audio/background music.mp3" preload="auto" controls loop>
     </audio>
     <div id="responsive-menu" class="responsive-menu">
@@ -294,26 +295,33 @@
                 </a></li>
             <li>
                 <?php if ($_SESSION["lang"] == "fr")
-                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
                     ?>
                 <?php if ($_SESSION["lang"] == "en")
-                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
                     ?>
                 <?php echo $lang["reservation"]; ?>
-                </a></li>
+                </a>
+            </li>
 
 
             <li>
-                <a href="activites.php"><?php echo $lang["activites"] ?></a>
+                <a href="activites.php">
+                    <?php echo $lang["activites"] ?>
+                </a>
 
             </li>
 
             <li>
                 <?php echo $lang["galerie"] ?>
                 <ul>
-                    <li><a href="galerieInterieur.php"><?php echo $lang["interieur"]; ?></a></li>
+                    <li><a href="galerieInterieur.php">
+                            <?php echo $lang["interieur"]; ?>
+                        </a></li>
                     <li><a href="galerieExterieur.php"><?php echo $lang["exterieur"]; ?></a></li>
-                    <li><a href="galerie360.php"><?php echo $lang["en360"]; ?></a></li>
+                    <li><a href="galerie360.php">
+                            <?php echo $lang["en360"]; ?>
+                        </a></li>
                 </ul>
             </li>
 
