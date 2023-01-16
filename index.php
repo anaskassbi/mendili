@@ -123,7 +123,6 @@ include "config.php"
             width: 450px;
             height: auto;
             padding: 10px 10px 10px 10px;
-            background-color: #ffffff;
             font-size: 15pt;
         }
 
@@ -144,8 +143,8 @@ include "config.php"
     <script>
         $(document).ready(function () {
             console.log("here")
-            $("#popupimg").attr("width", "425")
-            $("#dialog").css("width", "425")
+            $("#popupimg").attr("width", "700")
+            $("#dialog").css("width", "700")
         })
 
     </script>
@@ -155,8 +154,8 @@ include "config.php"
         <script>
             $(document).ready(function () {
                 console.log("here")
-                $("#popupimg").attr("width", "200")
-                $("#dialog").css("width", "200")
+                $("#popupimg").attr("width", "300")
+                $("#dialog").css("width", "300")
             })
 
         </script>
@@ -268,7 +267,7 @@ include "config.php"
     <div class="maintext">
     </div>
     <div id="boxes">
-        <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window">
+        <div style="top: 50%; left: 50%; display: none; " id="dialog" class="window">
             <div id="san">
                 <a href="#" class="close agree">
                     <img src="./images/commun/cross.png" width="25"
