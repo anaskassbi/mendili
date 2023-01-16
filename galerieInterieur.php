@@ -216,6 +216,7 @@ include "config.php"
             <div class="center_txt">
                 <div class="block_txt_center" style="width:411px; float:left; margin-left:150px">
                     <div class="scroll-pane" style="width:390px;">
+                    <br>
                         <?php echo $lang["galerieinterieurText"]; ?>
                         <div class="mimages" id="mimages">
                             <a href="images/bg/interieur/9.jpg" class="lsb-preview &quot2&quot"
