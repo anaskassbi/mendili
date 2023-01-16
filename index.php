@@ -18,6 +18,7 @@ include "config.php"
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 
+
     <script type="text/javascript">
         var isMobile = false;
         $(function () {
@@ -54,10 +55,14 @@ include "config.php"
             }).resize();
         });
     </script>
+
+
+
     <link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" />
     <script type="text/javascript" src="js/supersized.3.2.6.min.js"></script>
     <script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
     <script type="text/javascript" src="js/jquery.queryloader2.js"></script>
+
     <!--[if lt IE 7]>
     <script type="text/javascript" src="/unitpngfix.js"></script>
 <![endif]-->
@@ -65,10 +70,10 @@ include "config.php"
     <meta name="viewport" content="width=device-width" />
     <?php
     if ($_SESSION["small"] == 1) {
-    ?>
-    <link rel="stylesheet" href="css/small.css" type="text/css" />
-    <script type="text/javascript" src="js/mobile.js"></script>
-    <?php
+        ?>
+        <link rel="stylesheet" href="css/small.css" type="text/css" />
+        <script type="text/javascript" src="js/mobile.js"></script>
+        <?php
     } ?>
 
     <style>
@@ -91,16 +96,78 @@ include "config.php"
         .localisation-bloc a:hover {
             opacity: .7
         }
-    </style>
-</head>
 
-<body>
-    <a style="float: left; margin: 10px 0 0 10px;" href="#" id="playbutton" data-lity class="fa-play">
-        <img id="play" src="images/commun/play.png" width="28" height="26" alt="" />
-    </a>
+        #mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 9000;
+            background-color: #26262c;
+            display: none;
+        }
+
+        #boxes .window {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 440px;
+            height: 850px;
+            display: none;
+            z-index: 9999;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #boxes #dialog {
+            width: 450px;
+            height: auto;
+            padding: 10px 10px 10px 10px;
+            background-color: #ffffff;
+            font-size: 15pt;
+        }
+
+        .agree:hover {
+            background-color: #D1D1D1;
+        }
+
+        .popupoption:hover {
+            background-color: #D1D1D1;
+            color: green;
+        }
+
+        .popupoption2:hover {
+            color: red;
+        }
+    </style>
+    </style>
+    <script>
+        $(document).ready(function () {
+            console.log("here")
+            $("#popupimg").attr("width", "425")
+            $("#dialog").css("width", "425")
+        })
+
+    </script>
+    <?php
+    if ($_SESSION["small"] == 1) {
+        ?>
+        <script>
+            $(document).ready(function () {
+                console.log("here")
+                $("#popupimg").attr("width", "200")
+                $("#dialog").css("width", "200")
+            })
+
+        </script>
+        <?php
+    } ?>
+
+
+
     <script type="text/javascript">
         var images = []
-        for (i = 1; i <= 6; i++) {
+        for (i = 1; i <= 5; i++) {
             images.push({ image: "images/bg/acceuil/" + i + ".jpg" })
         }
         var gObjet = { transition_speed: 1800, performance: 0, slides: images };
@@ -111,6 +178,7 @@ include "config.php"
         $(document).ready(function () {
             var w = $(window).width();
             var h = $(window).height();
+
 
             $("#playbutton").click(function () {
                 if ($(this).hasClass('fa-play')) {
@@ -165,12 +233,57 @@ include "config.php"
 
                 setTimeout('$(".slide-0 a img").attr("src", "images/bg/acceuil/1.jpg")', 7800);
             }
+            var rand = Math.floor(Math.random() * (2 - 1 + 1) + 1)
+            console.log(rand)
+            $("#popupimg").attr("src", "./images/bg/popup/" + rand + ".jpg")
+            var id = '#dialog';
+            var maskHeight = $(document).height();
+            var maskWidth = $(window).width();
+            $('#mask').css({ 'width': maskWidth, 'height': maskHeight });
+            $('#mask').fadeIn(500);
+            $('#mask').fadeTo("slow", 0.9);
+            var winH = $(window).height();
+            var winW = $(window).width();
+            $(id).css('top', winH / 2 - $(id).height() / 2);
+            $(id).css('left', winW / 2 - $(id).width() / 2);
+            $(id).fadeIn(2000);
+            $('.window .close').click(function (e) {
+                e.preventDefault();
+                $('#mask').hide();
+                $('.window').hide();
+            });
+            $('#mask').click(function () {
+                $(this).hide();
+                $('.window').hide();
+            });
         });
-
     </script>
+
     <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
     <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="maintext">
+    </div>
+    <div id="boxes">
+        <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window">
+            <div id="san">
+                <a href="#" class="close agree">
+                    <img src="./images/commun/cross.png" width="25"
+                        style="float:right; margin-right: -25px; margin-top: -20px;">
+                </a>
+                <img id="popupimg" src="./images/bg/popup/1.jpg">
+            </div>
+        </div>
+        <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;"
+            id="mask"></div>
+    </div>
+
+    <a style="float: left; margin: 10px 0 0 10px;" href="#" id="playbutton" data-lity class="fa-play">
+        <img id="play" src="images/commun/play.png" width="28" height="26" alt="" />
+    </a>
     <div class="preloader"></div>
     <a id="prevslide" class="load-item"></a>
     <a id="nextslide" class="load-item"></a>
@@ -198,12 +311,13 @@ include "config.php"
                     <li>
                         <?php if ($_SESSION["lang"] == "fr")
                             echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
-                            ?>
+                                ?>
                         <?php if ($_SESSION["lang"] == "en")
                             echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
-                            ?>
+                                ?>
                         <?php echo $lang["reservation"]; ?>
-                        </a></li>
+                        </a>
+                    </li>
                     <li><a href="activites.php">
                             <?php echo $lang["activites"] ?>
                         </a></li>
@@ -219,13 +333,8 @@ include "config.php"
                     | </span> <a href="?lang=en">EN</a></div>
         </div>
 
-        <div id="dialog" style="display: none;">
-            <div>
-                <iframe id="frame" width="100%" height="100%"></iframe>
-            </div>
-        </div>
-        
-       
+
+
     </div>
     <style>
         #watermark {
@@ -249,12 +358,14 @@ include "config.php"
             /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
         }
     </style>
+
     <div id="watermark">
         <table style="border-collapse: collapse;margin-left: 20px;">
             <tr>
 
                 <td style="border: none;">
-                    <a style="float: left; margin: 10px 0 0 10px;" href="https://www.instagram.com/almendilikasbah/" data-lity class="fa-play">
+                    <a style="float: left; margin: 10px 0 0 10px;" href="https://www.instagram.com/almendilikasbah/"
+                        data-lity class="fa-play">
                         <img id="play" src="images/commun/instagram.png" width="40" height="38" class="zoom" alt="" />
                     </a>
                 </td>
@@ -275,12 +386,19 @@ include "config.php"
             </tr>
         </table>
     </div>
+
+
+    <div class="center">
+        <div class="center_txt">
+            
+        </div>
+    </div>
     <div class="footer">
         <div class="txt_footer">
             <?php echo $lang["droits"] ?>
         </div>
     </div>
-    
+
     <audio style="display: none;" id="player" src="audio/background music.mp3" preload="auto" controls loop>
     </audio>
 
@@ -327,22 +445,29 @@ include "config.php"
             <li>
                 <?php if ($_SESSION["lang"] == "fr")
                     echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
-                    ?>
+                        ?>
                 <?php if ($_SESSION["lang"] == "en")
                     echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
-                    ?>
+                        ?>
                 <?php echo $lang["reservation"]; ?>
-                </a></li>
+                </a>
+            </li>
             <li>
-                <a href="activites.php"><?php echo $lang["activites"] ?></a>
+                <a href="activites.php">
+                    <?php echo $lang["activites"] ?>
+                </a>
             </li>
 
             <li>
                 <?php echo $lang["galerie"] ?>
                 <ul>
-                    <li><a href="galerieInterieur.php"><?php echo $lang["interieur"]; ?></a></li>
+                    <li><a href="galerieInterieur.php">
+                            <?php echo $lang["interieur"]; ?>
+                        </a></li>
                     <li><a href="galerieExterieur.php"><?php echo $lang["exterieur"]; ?></a></li>
-                    <li><a href="galerie360.php"><?php echo $lang["en360"]; ?></a></li>
+                    <li><a href="galerie360.php">
+                            <?php echo $lang["en360"]; ?>
+                        </a></li>
                 </ul>
             </li>
             <li><a href="contact.php">

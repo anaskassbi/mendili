@@ -210,7 +210,7 @@ include "config.php"
                                     srcset="images/chambres/Suite Prestige/CHAAR EL ASSEL/1.jpeg" alt="Ayanae" />
                             </a>
                         </p>
-                        <h2>CHAÂR EL ASSEL</h2>
+                        <h2 style="font-size: 14px;">CHAÂR EL ASSEL</h2>
                         </br>
                         <p class="localisation-bloc">
                             <a href="elmamlaka.php">
@@ -218,7 +218,7 @@ include "config.php"
                                     srcset="images/chambres/Suite Prestige/EL MAMLAKA/1.jpeg" alt="EL OUAZIRIA" />
                             </a>
                         </p>
-                        <h2>EL MEMLAKA</h2>
+                        <h2 style="font-size: 14px;">EL MEMLAKA</h2>
                         </br></br>
                     </div>
                 </div>

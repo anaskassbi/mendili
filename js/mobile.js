@@ -67,6 +67,7 @@ isMobile = true;
             removeClass('block_txt_center').
             addClass('block_txt_mobile').appendTo(warper);
 
+ 
         $('.block_suites').
             removeClass('block_suites').
             addClass('block_suites_mobile').
@@ -75,7 +76,7 @@ isMobile = true;
         $('.full').
             removeClass('full').
             addClass('mobile')
-            $('.footer').appendTo(warper);
+        $('.footer').appendTo(warper);
 
         $('#mobile-menu').slicknav({
             label: 'MENU',
@@ -127,6 +128,8 @@ isMobile = true;
                 return false;
             }
         });
+
+
 
         var onImageComplete = function () {
 

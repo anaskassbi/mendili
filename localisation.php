@@ -72,7 +72,7 @@ include "config.php"
         <img id="play" src="images/commun/play.png" width="28" height="26" alt="" />
     </a>
     <script type="text/javascript">
-        var gObjet = { slide_interval: 2800, transition: 1, transition_speed: 1800, stop_loop: 1, keyboard_nav: 0, thumb_links: 1, performance: 0, slide_links: false, slides: [{ image: "images/bg/localisation.jpg" }, { image: "images/bg/localisation.jpg" }] };
+        var gObjet = { slide_interval: 2800, transition: 1, transition_speed: 1800, stop_loop: 1, keyboard_nav: 0, thumb_links: 1, performance: 0, slide_links: false, slides: [{ image: "images/bg/localisation.jpg" }] };
 
         if (!isMobile)
             jQuery(function (a) {

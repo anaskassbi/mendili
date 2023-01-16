@@ -243,14 +243,14 @@ include "config.php"
                 <div class="block_txt_center" style=" float:left; margin-left:150px">
                     <div class="scroll-pane" style="">
                         <?php echo $lang["restaurantText"] ?>
-                        <h2><?php echo $lang["downloadVins"]; ?></h2>
+                        <h2 style="font-size: 14px;"><?php echo $lang["downloadVins"]; ?></h2>
                         <p class="localisation-bloc">
                             <a id="btnShow" href="#">
                                 <img class="show" src="images/commun/vinsfirstpage.png"
                                     srcset="images/commun/vinsfirstpage.png" alt="localisation" />
                             </a>
                         </p>
-                        <h2><?php echo $lang["downloadBar"]; ?></h2>
+                        <h2 style="font-size: 14px;"><?php echo $lang["downloadBar"]; ?></h2>
                         <p class="localisation-bloc">
                             <a id="btnShowBar" href="#">
                                 <img class="show" src="images/commun/barfirstpage.png"

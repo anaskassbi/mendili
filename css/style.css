@@ -280,7 +280,8 @@ body {
 
 .scroll-pane p {
 	line-height: 1.4;
-	padding: 8px
+	padding: 8px;
+	text-align: justify;
 }
 
 .center {
@@ -324,7 +325,7 @@ body {
 	color: #d6d6d6;
 	width: 300px;
 	font-family: "Justus Italic";
-	font-size: 12px;
+	font-size: 24px;
 	font-weight: 400;
 	margin: 56px 0 26px 42px
 }
@@ -336,7 +337,8 @@ body {
 	font-size: 12px;
 	font-weight: 400;
 	width: 324px;
-	margin: 0 0 0 28px
+	margin: 0 0 0 28px;
+	text-align: justify;
 }
 
 .scroll-pane td {
@@ -345,7 +347,7 @@ body {
 	line-height: 18px;
 	font-size: 12px;
 	font-weight: 400px;
-	width: px;
+	width: 10px;
 	margin: 0 0 0 28px;
 	border: 1px solid #9f9f9f;
 	padding: 11px;
@@ -364,9 +366,9 @@ body {
 .block_txt_center h2 {
 	color: #936b47;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 14px;
+	font-size: 24px;
 	font-weight: 400;
-	margin: 0 0 0 37px
+	margin: 0 0 0 37px;
 }
 
 .block_txt_center ul {
@@ -374,7 +376,9 @@ body {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 12px;
 	font-weight: 400;
-	margin: 10px 0 0 55px
+	margin: 10px 0 0 55px;
+	padding: 8px;
+
 }
 
 .block_txt_center ul li {
@@ -429,7 +433,7 @@ body {
 	width: 180px;
 	color: #a3764a;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 12px;
+	font-size: 24px;
 	font-weight: 400;
 	margin: 20px 0 0 20px;
 	padding: 5px 0
@@ -441,7 +445,9 @@ body {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 12px;
 	font-weight: 400;
-	margin: 20px 0 10px 20px
+	margin: 20px 0 10px 20px;
+	padding: 8px;
+
 }
 
 .block_suites ul li a {
@@ -619,7 +625,8 @@ body {
 		font-size: 12px;
 		font-weight: 400;
 		width: 324px;
-		margin: 0 0 0 28px
+		margin: 0 0 0 28px;
+		text-align: justify;
 	}
 
 	.jspContainer {

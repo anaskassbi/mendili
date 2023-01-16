@@ -18,10 +18,10 @@ $lang = array(
     "en360" => "Al Mendili en 360",
     "droits" => "© 2023 Al Mendili Private Resort & Spa Marrakech. Tous droits réservés.",
     "presentationText" => "
-    <h2 style='margin-top: 20px; font-size: 24px;'>Riad Al Mendili Private Resort  & SPA :</h2>
+    <h2>Riad Al Mendili Private Resort  & SPA :</h2>
     <p>Riad Al Mendili Private Resort & SPA est une propriété de luxe. Catherine et Alain vous accueillent, vous êtes chez vous dans le calme et la sérénité de leur Riad.</p>",
     "localisationText" => "
-    <h2 style='margin-top: 20px; font-size: 24px;'>Localisation de Riad Al Mendili Private Resort & SPA :</h2>
+    <h2 class='title'>Localisation de Riad Al Mendili Private Resort & SPA :</h2>
     <ul>Coordonnées :
     <li>Adresse postale : BP 22956 Marrakech Medina – 40000 Marrakech </li>
     </ul>
@@ -34,7 +34,7 @@ $lang = array(
     <p>
     Riad Al Mendili Private Resort & Spa votre Contact Hôtel à Marrakech, ville impériale surnommée la « perle du sud » ne peut laisser indifférent. Imprégnez-vous de son atmosphère ! Avec vue sur la chaine de l'Atlas, à proximité du centre-ville de Marrakech et des plus grands golfs, Catherine et Alain vous accueille dans un cadre exceptionnel propice au calme et à la sérénité.</p>
     ",
-    "descriptifText" => "<h2 style='margin-top: 20px; font-size: 24px;'>Au cœur du charme de la Ville de Marrakech : </h2>
+    "descriptifText" => "<h2 >Au cœur du charme de la Ville de Marrakech : </h2>
     <p>Le Riad Al Mendili bénéficie d’un environnement privilégié, aux portes de Marrakech et de la vallée de L’Ourika,</p>
     <ul>
     <li>Salon cheminée, </li>
@@ -50,7 +50,7 @@ $lang = array(
     </ul> 
     ",
     "prestationText" => "
-    <h2 style='margin-top: 20px; font-size: 24px;'>Des prestations hôtelières de luxe à votre disposition 24h/24 : </h2>
+    <h2 >Des prestations hôtelières de luxe à votre disposition 24h/24 : </h2>
     <ul>
     <li>Service hôtelier complet </li>
     <li>Restauration gastronomique </li>
@@ -187,7 +187,7 @@ $lang = array(
     <li>Grande terrasse privative aménagée face à l’Atlas et la piscine.</li>
     </ul>",
     "spaText" => "
-    <h2 style='margin-top: 20px; font-size: 24px;'>Al Mendili et le bien- être :</h2>
+    <h2 >Al Mendili et le bien- être :</h2>
     <p>Riad Al Mendili Private Resort & Spa, le bien-être Marrakech, vous propose son espace SPA conçu dans la plus pure tradition marocaine. Hammam traditionnel à la vapeur d’eucalyptus, tonique ou relaxant, soins du corps, et du visage sont une invitation au voyage. </p>
     <p>Les soins sont dispensés, au sein même du Riad de luxe à Marrakech, par une esthéticienne professionnelle utilisant des produits 100% naturels issus de la vallée de l’Ourika, haut lieu de la région de Marrakech, à base d’huile d’argan et d’huiles essentielles aux senteurs magiques d’Orient qui incitent à la méditation, la relaxation, le bien-être du corps et de l’esprit.</p>
     ",
@@ -200,20 +200,20 @@ $lang = array(
     "downloadBar" => "
     Télécharger la carte du bar
     ",
-    "galerieinterieurText" => "<h2 style='margin-top: 20px; font-size: 24px;'>Une expérience unique vous attend :</h2>
+    "galerieinterieurText" => "<h2 >Une expérience unique vous attend :</h2>
     <p>Catherine et Alain, les propriétaires du Riad vous accueilleront chaleureusement. Derrière les grandes portes de cette maison d’hôtes se cache un monde qui vous fera vivre au rythme de la volupté orientale. Les 6 chambres et les 4 suites portant des noms arabes sauront vous apporter le repos mérité et tout le confort indispensable digne d’un hôtel de luxe à Marrakech.</p>
     ",
-    "galerieexterieurText" => "<h2 style='margin-top: 20px; font-size: 24px;'>A Marrakech il existe des lieux qui ne se décrivent pas :</h2>
+    "galerieexterieurText" => "<h2 >A Marrakech il existe des lieux qui ne se décrivent pas :</h2>
     <p>Soyez certains qu’au Riad Al Mendili vous trouverez le dépaysement, le grand air, la nature et toute la modernité nécessaire à seulement 25 mn de Marrakech.</p>
     ",
     "restaurantText" => "
-    <h2 style='margin-top: 20px; font-size: 24px;'>Al Mendili Cuisine & BAR </h2>
+    <h2 >Al Mendili Cuisine & BAR </h2>
     <p>Savourez un déjeuner ou un dîner dépaysant, dans le patio marocain, au bord de la piscine ou à la lueur des étoiles sur notre terrasse panoramique, chaque espace du Riad est à votre disposition. Notre chef sélectionne les meilleurs produits marocains, pour la plupart issus de notre potager, et les met en valeur.</p>
     <p>Al Mendili Private Resort & SPA offre une cuisine pétillante et audacieuse à découvrir ! Passez au bar lounge, et dégustez l’un de nos cocktails. Chaque matin, les petits déjeuners sont une véritable surprise, à la fois complets et variés.</p>
     ",
     "basseHaute" => "
     <p>
-    <h2> Basse Saison :</h2>
+    <h2 style='font-size: 14px;'> Basse Saison :</h2>
     <ul>
         <li>Du 4 janvier au 6 mars</li>
         <li>Du 30 mai au 18 octobre</li>
@@ -221,7 +221,7 @@ $lang = array(
     </ul>
     </p>
     <p>
-    <h2>Haute saison :</h2>
+    <h2 style='font-size: 14px;'>Haute saison :</h2>
     <ul>
         <li>Du 7 mars au 29 mai</li>
         <li>Du 19 octobre au 03 novembre</li>
@@ -244,7 +244,7 @@ $lang = array(
     </ul>",
     "conditions" => "
     <p>
-    <h2>Conditions d’arrivée et de départ :</h2>
+    <h2 style='font-size: 14px;'>Conditions d’arrivée et de départ :</h2>
 
     <ul>
         <li> Arrivée 13H</li>
@@ -252,7 +252,7 @@ $lang = array(
     </ul>
     </p>",
     "paiementText" => "
-    <h2>Paiements acceptés :</h2>
+    <h2 style='font-size: 14px;'>Paiements acceptés :</h2>
     <ul>
         Visa/ Mastercard/ Dinersclub/ American Express/ Virements/ Espèces/ Chèques.
         TVA comprise et Taxes locales en sus, 36 Dirhams environ 3,2 €uros par
@@ -274,7 +274,7 @@ $lang = array(
     </p>",
     "meteo" => "Météo du jour",
     "activitesText" => "
-    <h2 style='margin-top: 20px; font-size: 24px;'>Activités Les Golfs de Marrakech :</h2>
+    <h2 >Activités Les Golfs de Marrakech :</h2>
     <ul>
     <li><a style='color:#c5c5c5' href='https://www.royalgolfmarrakech.com'>ROYAL GOLF </a></li>
     <li><a style='color:#c5c5c5' href='https://www.atlasgolfmarrakech.com'>ATLAS GOLF </a></li>
@@ -283,7 +283,7 @@ $lang = array(
     <li><a style='color:#c5c5c5' href ='https://www.alliances.co.ma'>AL MAADEN GOLF RESORTS</a> </li>
     <li><a style='color:#c5c5c5' href='www.assoufid.com'> GOLF ASSOUFID </a></li>
     </ul>
-    <h2 style='margin-top: 20px; font-size: 24px;'>Autres activités et loisirs :</h2>
+    <h2 >Autres activités et loisirs :</h2>
     <ul>
     <li>Visites des lieux touristiques et découvertes de la région,</li>
     <li>Promenades à dos de chameau, équitation,</li>

@@ -77,7 +77,7 @@ include "config.php";
 
 
     <script type="text/javascript">
-        var gObjet = { slide_interval: 2800, transition: 1, transition_speed: 1800, stop_loop: 1, keyboard_nav: 0, thumb_links: 1, performance: 0, slide_links: false, slides: [{ image: "images/bg/presentation.jpg" }, { image: "images/bg/presentation.jpg" }] };
+        var gObjet = { slide_interval: 2800, transition: 1, transition_speed: 1800, stop_loop: 1, keyboard_nav: 0, thumb_links: 1, performance: 0, slide_links: false, slides: [{ image: "images/bg/presentation.jpg" }] };
 
         if (!isMobile)
             jQuery(function (a) { a.supersized(gObjet); });
@@ -216,6 +216,7 @@ include "config.php";
                         <?php
                         echo $lang["presentationText"]
                             ?>
+                           
                     </div>
                 </div>
             </div>
@@ -236,7 +237,7 @@ include "config.php";
 
     <div id="responsive-menu" class="responsive-menu">
         <ul id="mobile-menu">
-            <li>
+            <li >
                 <?php echo $lang["presentation"] ?>
                 <ul>
                     <li><a href="presentation.php">

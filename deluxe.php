@@ -86,7 +86,7 @@ include "config.php"
     <script type="text/javascript" src="js/jquery.effects.js"></script>
     <script type="text/javascript">
         var images = []
-        for (i = 1; i <= 7; i++) {
+        for (i = 1; i <= 6; i++) {
             images.push({ image: "images/bg/chambres/" + i + ".jpg" })
         }
         var gObjet = { transition_speed: 1800, performance: 0, slides: images };
@@ -210,7 +210,7 @@ include "config.php"
                                 </a>
                             </p>
                             <div class="conditions">
-                                <h2>EL ASKARIA</h2>
+                                <h2 style="font-size: 14px;">EL ASKARIA</h2>
                             </div>
                         </div>
                         <div style='display: inline-block; vertical-align: top;'>
@@ -221,7 +221,7 @@ include "config.php"
                                 </a>
                             </p>
                             <div class="conditions">
-                                <h2>LAILA SAIDA</h2>
+                                <h2 style="font-size: 14px;">LAILA SAIDA</h2>
                             </div>
                         </div>
                         <div style='display: inline-block; vertical-align: top;'>
@@ -232,7 +232,7 @@ include "config.php"
                                 </a>
                             </p>
                             <div class="conditions">
-                                <h2>EL ALIA</h2>
+                                <h2 style="font-size: 14px;">EL ALIA</h2>
                             </div>
                         </div>
                         <div style='display: inline-block; vertical-align: top;'>
@@ -243,7 +243,7 @@ include "config.php"
                                 </a>
                             </p>
                             <div class="conditions">
-                                <h2>EL AMIRA</h2>
+                                <h2 style="font-size: 14px;">EL AMIRA</h2>
                             </div>
                         </div>
                         <div style='display: inline-block; vertical-align: top;'>
@@ -254,7 +254,7 @@ include "config.php"
                                 </a>
                             </p>
                             <div class="conditions">
-                                <h2>SOUIHLA</h2>
+                                <h2 style="font-size: 14px;">SOUIHLA</h2>
                             </div>
                         </div>
                         <div style='display: inline-block; vertical-align: top;'>
@@ -267,7 +267,7 @@ include "config.php"
 
 
                             <div class="conditions">
-                                <h2>EL YACOUT</h2>
+                                <h2 style="font-size: 14px;">EL YACOUT</h2>
                             </div>
                         </div>
                     </div>

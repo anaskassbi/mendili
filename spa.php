@@ -232,7 +232,7 @@ include "config.php"
                     <div class="scroll-pane">
                         </br>
                         <?php echo $lang["spaText"] ?>
-                        <h2> <?php echo $lang["downloadSpa"]; ?></h2>
+                        <h2 style="font-size: 14px;"> <?php echo $lang["downloadSpa"]; ?></h2>
                         <p class="localisation-bloc">
                             <a id="btnShow" href="#">
                                 <img class="show" src="images/commun/spafirstpage.png"

@@ -233,7 +233,7 @@ include "config.php"
     <script src="js/openWeather.min.js"></script>
     <script type="text/javascript">
         var images = []
-        for (i = 1; i <= 8; i++) {
+        for (i = 1; i <= 5; i++) {
             images.push({ image: "images/bg/tarifs/" + i + ".jpg" })
         }
         var gObjet = { transition_speed: 1800, performance: 0, slides: images };
@@ -361,9 +361,9 @@ include "config.php"
                 <div class="block_txt_center" style="float:left; width:400px; padding:25px 0 0 0; margin-left:100px">
                     <div class="scroll-pane">
                         <?php echo $lang["basseHaute"] ?>
-                        <p>
-                        <table>
-                            <th>
+                        
+                        <table id="table">
+                            <th >
                                 <tr>
                                     <th></th>
                                     <th><b>Basse Saison</b></th>
@@ -372,7 +372,7 @@ include "config.php"
                             </th>
                             <tbody>
                                 <tr>
-                                    <td>Chambre Delux</td>
+                                    <td>Chambre Deluxe</td>
                                     <td>210€</td>
                                     <td>25€</td>
                                 </tr>
@@ -393,7 +393,7 @@ include "config.php"
                                 </tr>
                             </tbody>
                         </table>
-                        </p>
+                        
 
                         <?php echo $lang["tarifsList"] ?>
                         <?php echo $lang["conditions"] ?>

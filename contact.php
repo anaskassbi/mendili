@@ -250,7 +250,7 @@ include "config.php"
     <script src="js/openWeather.min.js"></script>
     <script type="text/javascript">
         var images = []
-        for (i = 1; i <= 8; i++) {
+        for (i = 1; i <= 6; i++) {
             images.push({ image: "images/bg/contact/" + i + ".jpg" })
         }
         var gObjet = { transition_speed: 1800, performance: 0, slides: images };
@@ -266,16 +266,12 @@ include "config.php"
                     $(this).addClass('fa-pause');
                     document.getElementById('player').play()
                     $("#play").attr("src", "images/commun/pause.png");
-
-
                 }
                 else {
                     $(this).removeClass('fa-pause');
                     $(this).addClass('fa-play');
                     document.getElementById('player').pause()
                     $("#play").attr("src", "images/commun/play.png");
-
-
                 }
             })
             $("body").queryLoader2({

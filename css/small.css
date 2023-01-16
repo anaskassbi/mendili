@@ -217,17 +217,30 @@ html{
 .block_txt_mobile h1,.block_txt_mobile h2{
     color: #D6D6D6;    
     font-family: "Justus Italic";
-    font-size: 26px;
+    font-size: 16px;
     font-weight: 400;
     margin:0 0 20px 0 !important;
 }
 
+#table{
+    
+    color: #9f9f9f;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 18px;
+	font-size: 12px;
+	font-weight: 500;
+	width: 100%;
+    border: 1px solid gray;
+    padding: 4px;
+    margin: 10px;
+
+}
 .block_txt_mobile h1+div{
     width: auto !important;
 }
 
 .block_txt_mobile h2{
-    font-size: 20px;
+    font-size: 18px;
     word-wrap: break-word;
     color: #936B47;
 }
@@ -236,6 +249,9 @@ html{
     color: #9F9F9F;     
     font-weight: 400;
     padding: 0 0 0 5%;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: justify;
 }
 
 .block_txt_mobile ul li{
@@ -254,6 +270,7 @@ html{
     font-weight: 400;    
     margin: 0;
     padding:0;
+    text-align: justify;
 }
 
 .block_txt_mobile .lien_galerie2 {
@@ -272,6 +289,8 @@ html{
 .suites .block_txt_mobile p{
     font-size: 18px !important;
     margin: 0 0 12px 0 !important;
+    text-align: justify;
+
 }
 
 .block_doc{

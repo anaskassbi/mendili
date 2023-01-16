@@ -208,7 +208,7 @@ include "config.php"
                                     srcset="images/chambres/Suite Juniors/AYANAE/1.jpeg" alt="Ayanae" />
                             </a>
                         </p>
-                        <h2>AYANAE</h2>
+                        <h2 style="font-size: 14px;">AYANAE</h2>
                         </br>
                         <p class="localisation-bloc">
                             <a href="elouaziria.php">
@@ -216,7 +216,7 @@ include "config.php"
                                     srcset="images/chambres/Suite Juniors/EL OUAZIRIA/1.jpeg" alt="EL OUAZIRIA" />
                             </a>
                         </p>
-                        <h2>EL OUAZIRIA</h2>
+                        <h2 style="font-size: 14px;">EL OUAZIRIA</h2>
                         </br></br>
                     </div>
                 </div>
