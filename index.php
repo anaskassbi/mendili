@@ -305,7 +305,7 @@ include "config.php"
             <tr>
 
                 <td style="border: none;">
-                    <a style="float: left; margin: 10px 0 0 10px;" href="https://www.instagram.com/almendilikasbah/"
+                    <a style="float: left; margin: 10px 0 0 10px;" href="https://www.instagram.com/riad_al_mendili/"
                         data-lity class="fa-play">
                         <img id="play" src="images/commun/instagram.png" width="40" height="38" class="zoom" alt="" />
                     </a>
