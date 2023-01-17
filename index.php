@@ -17,6 +17,7 @@ include "config.php"
     <link rel="stylesheet" href="css/jquery-ui.theme.min.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/singleimagepopup.min.css" />
 
 
     <script type="text/javascript">
@@ -140,28 +141,7 @@ include "config.php"
         }
     </style>
     </style>
-    <script>
-        $(document).ready(function () {
-            console.log("here")
-            $("#popupimg").attr("width", "700")
-            $("#dialog").css("width", "700")
-        })
-
-    </script>
-    <?php
-    if ($_SESSION["small"] == 1) {
-        ?>
-        <script>
-            $(document).ready(function () {
-                console.log("here")
-                $("#popupimg").attr("width", "300")
-                $("#dialog").css("width", "300")
-            })
-
-        </script>
-        <?php
-    } ?>
-
+  
 
 
     <script type="text/javascript">
@@ -232,29 +212,6 @@ include "config.php"
 
                 setTimeout('$(".slide-0 a img").attr("src", "images/bg/acceuil/1.jpg")', 7800);
             }
-            var rand = Math.floor(Math.random() * (2 - 1 + 1) + 1)
-            console.log(rand)
-            $("#popupimg").attr("src", "./images/bg/popup/" + rand + ".jpg")
-            var id = '#dialog';
-            var maskHeight = $(document).height();
-            var maskWidth = $(window).width();
-            $('#mask').css({ 'width': maskWidth, 'height': maskHeight });
-            $('#mask').fadeIn(500);
-            $('#mask').fadeTo("slow", 0.9);
-            var winH = $(window).height();
-            var winW = $(window).width();
-            $(id).css('top', winH / 2 - $(id).height() / 2);
-            $(id).css('left', winW / 2 - $(id).width() / 2);
-            $(id).fadeIn(2000);
-            $('.window .close').click(function (e) {
-                e.preventDefault();
-                $('#mask').hide();
-                $('.window').hide();
-            });
-            $('#mask').click(function () {
-                $(this).hide();
-                $('.window').hide();
-            });
         });
     </script>
 
@@ -264,22 +221,7 @@ include "config.php"
 </head>
 
 <body>
-    <div class="maintext">
-    </div>
-    <div id="boxes">
-        <div style="top: 50%; left: 50%; display: none; " id="dialog" class="window">
-            <div id="san">
-                <a href="#" class="close agree">
-                    <img src="./images/commun/cross.png" width="25"
-                        style="float:right; margin-right: -25px; margin-top: -20px;">
-                </a>
-                <img id="popupimg" src="./images/bg/popup/1.jpg">
-            </div>
-        </div>
-        <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;"
-            id="mask"></div>
-    </div>
-
+    <div id="singleimagepopup"></div>
     <a style="float: left; margin: 10px 0 0 10px;" href="#" id="playbutton" data-lity class="fa-play">
         <img id="play" src="images/commun/play.png" width="28" height="26" alt="" />
     </a>
@@ -389,7 +331,7 @@ include "config.php"
 
     <div class="center">
         <div class="center_txt">
-            
+
         </div>
     </div>
     <div class="footer">
@@ -477,6 +419,19 @@ include "config.php"
                 style="color:#7A7A7A;font-family:arial;font-size:12px;"> | </span> <a href="index.php?lang=en">EN</a>
         </div>
     </div>
+    <script src="js/jquery.singleimagepopup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var rand = Math.floor(Math.random() * (2 - 1 + 1) + 1)
+
+            $("#singleimagepopup").singleImagePopup({
+                width: "100%",
+                height: "100%",
+                imageUrl: "./images/bg/popup/" + rand + ".jpg",
+                stop: false,
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -254,13 +254,13 @@ $lang = array(
          Kasbah Al Mendili.
      </ul>",
     "contactClients" => "
-     <h2>Customer contact</h2>
+     <h2 style='font-size: 16px;'>Customer contact</h2>
      <ul>
         <li> Phone: +212(0) 600 060 060 | +212(0) 600 020 020</li>
         <li> Email: almendilikasbah@gmail.com</li>
     </ul>
     </br>
-    <h2>Professional contact / Partnership request:</h2>
+    <h2 style='font-size: 16px;'>Professional contact / Partnership request:</h2>
 
     <ul>
         <li>Phone: +33 6 62 98 92 81 | +212 600 010 010</li>
