@@ -175,7 +175,13 @@
     margin: 0 auto;      
     background: #444444;
 }
-
+#play{
+    position: fixed;
+    bottom: 50px;
+    left: 5px;
+    z-index: 99;
+    color: white;
+}
 .footer{
     position: static;
     left: auto;

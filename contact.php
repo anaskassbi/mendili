@@ -237,15 +237,44 @@ include "config.php"
     <meta name="viewport" content="width=device-width" />
     <?php
     if ($_SESSION["small"] == 1) {
-    ?>
-    <link rel="stylesheet" href="css/small.css" type="text/css" />
-    <script type="text/javascript" src="js/mobile.js"></script>
-    <?php
+        ?>
+        <link rel="stylesheet" href="css/small.css" type="text/css" />
+        <script type="text/javascript" src="js/mobile.js"></script>
+        <?php
     } ?>
+
+    <style>
+        #play {
+            animation: shake 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0)
+            }
+
+            25% {
+                transform: translateX(5px)
+            }
+
+            50% {
+                transform: translateX(-5px)
+            }
+
+            75% {
+                transform: translateX(5px)
+            }
+
+            100% {
+                transform: translateX(0)
+            }
+        }
+    </style>
 </head>
 
 <body> <a style="float: left; margin: 10px 0 0 10px;" href="#" id="playbutton" data-lity class="fa-play">
-        <img id="play" src="images/commun/play.png" width="28" height="26" alt="" />
+        <img id="play" src="images/commun/music.png" width="28" height="26" alt="" />
     </a>
     <script src="js/openWeather.min.js"></script>
     <script type="text/javascript">
@@ -265,13 +294,13 @@ include "config.php"
                     $(this).removeClass('fa-play');
                     $(this).addClass('fa-pause');
                     document.getElementById('player').play()
-                    $("#play").attr("src", "images/commun/pause.png");
+
                 }
                 else {
                     $(this).removeClass('fa-pause');
                     $(this).addClass('fa-play');
                     document.getElementById('player').pause()
-                    $("#play").attr("src", "images/commun/play.png");
+
                 }
             })
             $("body").queryLoader2({
@@ -338,13 +367,14 @@ include "config.php"
                         </a></li>
                     <li>
                         <?php if ($_SESSION["lang"] == "fr")
-                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
-                            ?>
+                            echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                                ?>
                         <?php if ($_SESSION["lang"] == "en")
-                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
-                            ?>
+                            echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                                ?>
                         <?php echo $lang["reservation"]; ?>
-                        </a></li>
+                        </a>
+                    </li>
                     <li><a href="activites.php">
                             <?php echo $lang["activites"] ?>
                         </a></li>
@@ -390,7 +420,7 @@ include "config.php"
                             <?php echo $lang["contactClients"] ?>
                         </div>
                         <p class="localisation-bloc">
-                            <a href="https://www.google.com/maps/place/31%C2%B039'56.6%22N+7%C2%B055'03.0%22W/@31.6656785,-7.9176593,17z/data=!4m5!3m4!1s0x0:0x0!8m2!3d31.6657333!4d-7.9175091?hl=fr"
+                            <a href="https://www.google.com/maps/place/Riad+Al+Mendili+Private+Resort+%26+Spa/@31.500247,-7.879319,13z/data=!4m8!3m7!1s0x0:0x92ee15015cc436b5!5m2!4m1!1i2!8m2!3d31.5002445!4d-7.879317?hl=en"
                                 target="_blank">
                                 <img class="show" src="images/location/locationbg.png"
                                     srcset="images/location/locationbg.png" alt="localisation" />
@@ -406,7 +436,7 @@ include "config.php"
             <?php echo $lang["droits"] ?>
         </div>
     </div>
-    
+
     <audio style="display: none;" id="player" src="audio/background music.mp3" preload="auto" controls loop>
     </audio>
 
@@ -452,26 +482,33 @@ include "config.php"
                 </a></li>
             <li>
                 <?php if ($_SESSION["lang"] == "fr")
-                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
-                    ?>
+                    echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                        ?>
                 <?php if ($_SESSION["lang"] == "en")
-                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
-                    ?>
+                    echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                        ?>
                 <?php echo $lang["reservation"]; ?>
-                </a></li>
+                </a>
+            </li>
 
 
             <li>
-                <a href="activites.php"><?php echo $lang["activites"] ?></a>
+                <a href="activites.php">
+                    <?php echo $lang["activites"] ?>
+                </a>
 
             </li>
 
             <li>
                 <?php echo $lang["galerie"] ?>
                 <ul>
-                    <li><a href="galerieInterieur.php"><?php echo $lang["interieur"]; ?></a></li>
+                    <li><a href="galerieInterieur.php">
+                            <?php echo $lang["interieur"]; ?>
+                        </a></li>
                     <li><a href="galerieExterieur.php"><?php echo $lang["exterieur"]; ?></a></li>
-                    <li><a href="galerie360.php"><?php echo $lang["en360"]; ?></a></li>
+                    <li><a href="galerie360.php">
+                            <?php echo $lang["en360"]; ?>
+                        </a></li>
                 </ul>
             </li>
 

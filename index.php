@@ -141,7 +141,7 @@ include "config.php"
         }
     </style>
     </style>
-  
+
 
 
     <script type="text/javascript">
@@ -164,13 +164,11 @@ include "config.php"
                     $(this).removeClass('fa-play');
                     $(this).addClass('fa-pause');
                     document.getElementById('player').play()
-                    $("#play").attr("src", "images/commun/pause.png");
                 }
                 else {
                     $(this).removeClass('fa-pause');
                     $(this).addClass('fa-play');
                     document.getElementById('player').pause()
-                    $("#play").attr("src", "images/commun/play.png");
 
 
                 }
@@ -218,12 +216,68 @@ include "config.php"
     <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
     <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <style>
+        #play {
+            animation: shake 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0)
+            }
+
+            25% {
+                transform: translateX(5px)
+            }
+
+            50% {
+                transform: translateX(-5px)
+            }
+
+            75% {
+                transform: translateX(5px)
+            }
+
+            100% {
+                transform: translateX(0)
+            }
+        }
+    </style>
+    <style>
+        #play {
+            animation: shake 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0)
+            }
+
+            25% {
+                transform: translateX(5px)
+            }
+
+            50% {
+                transform: translateX(-5px)
+            }
+
+            75% {
+                transform: translateX(5px)
+            }
+
+            100% {
+                transform: translateX(0)
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div id="singleimagepopup"></div>
     <a style="float: left; margin: 10px 0 0 10px;" href="#" id="playbutton" data-lity class="fa-play">
-        <img id="play" src="images/commun/play.png" width="28" height="26" alt="" />
+        <img id="play" src="images/commun/music.png" width="28" height="26" alt="" />
     </a>
     <div class="preloader"></div>
     <a id="prevslide" class="load-item"></a>
@@ -251,10 +305,10 @@ include "config.php"
                         </a></li>
                     <li>
                         <?php if ($_SESSION["lang"] == "fr")
-                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                            echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
                                 ?>
                         <?php if ($_SESSION["lang"] == "en")
-                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                            echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
                                 ?>
                         <?php echo $lang["reservation"]; ?>
                         </a>
@@ -273,9 +327,6 @@ include "config.php"
             <div class="langue"><a href="?lang=fr">FR</a><span style="color:#7A7A7A;font-family:arial;font-size:12px;">
                     | </span> <a href="?lang=en">EN</a></div>
         </div>
-
-
-
     </div>
     <style>
         #watermark {
@@ -303,26 +354,32 @@ include "config.php"
     <div id="watermark">
         <table style="border-collapse: collapse;margin-left: 20px;">
             <tr>
-
                 <td style="border: none;">
-                    <a style="float: left; margin: 10px 0 0 10px;" href="https://www.instagram.com/riad_al_mendili/"
-                        data-lity class="fa-play">
-                        <img id="play" src="images/commun/instagram.png" width="40" height="38" class="zoom" alt="" />
+                    <a style="float: left; margin: 10px 0 0 10px;" target="_blank"
+                        href="https://www.instagram.com/riad_al_mendili/" data-lity class="fa-play">
+                        <img src="images/commun/instagram.png" width="40" height="38" class="zoom" alt="" />
                     </a>
                 </td>
                 <td style="border: none;">
                     <a style="float: left; margin: 10px 0 0 10px;" target="_blank"
-                        href="https://api.whatsapp.com/send?phone=+213800010010&text=Hello" data-lity class="fa-play">
-                        <img id="play" src="images/commun/whatsapp.png" width="40" height="38" class="zoom" alt="" />
+                        href="https://api.whatsapp.com/send?phone=+212600010010&text=Do%20you%20have%20a%20question?"
+                        data-lity class="fa-play">
+                        <img src="images/commun/whatsapp.png" width="40" height="38" class="zoom" alt="" />
                     </a>
                 </td>
 
                 <td style="border: none;">
-                    <a style="float: left; margin: 10px 0 0 10px;"
+                    <a target="_blank" style="float: left; margin: 10px 0 0 10px;"
                         href="https://www.tripadvisor.com/Hotel_Review-g293734-d1175499-Reviews-Riad_Al_Mendili_Kasbah-Marrakech_Marrakech_Safi.html"
                         data-lity class="fa-play">
-                        <img id="play" src="images/commun/tripadvisor.png" width="40" height="38" class="zoom" alt="" />
+                        <img src="images/commun/tripadvisor.png" width="40" height="38" class="zoom" alt="" />
                     </a>
+                </td>
+
+                <td style="border: none;">
+                    <audio style="display: none;" id="player" src="audio/background music.mp3" preload="auto" controls
+                        loop>
+                    </audio>
                 </td>
             </tr>
         </table>
@@ -340,8 +397,7 @@ include "config.php"
         </div>
     </div>
 
-    <audio style="display: none;" id="player" src="audio/background music.mp3" preload="auto" controls loop>
-    </audio>
+
 
     <div id="responsive-menu" class="responsive-menu">
         <ul id="mobile-menu">
@@ -385,10 +441,10 @@ include "config.php"
                 </a></li>
             <li>
                 <?php if ($_SESSION["lang"] == "fr")
-                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                    echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
                         ?>
                 <?php if ($_SESSION["lang"] == "en")
-                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                    echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
                         ?>
                 <?php echo $lang["reservation"]; ?>
                 </a>

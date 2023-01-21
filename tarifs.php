@@ -220,15 +220,43 @@ include "config.php"
     <meta name="viewport" content="width=device-width" />
     <?php
     if ($_SESSION["small"] == 1) {
-    ?>
-    <link rel="stylesheet" href="css/small.css" type="text/css" />
-    <script type="text/javascript" src="js/mobile.js"></script>
-    <?php
+        ?>
+        <link rel="stylesheet" href="css/small.css" type="text/css" />
+        <script type="text/javascript" src="js/mobile.js"></script>
+        <?php
     } ?>
+    <style>
+        #play {
+            animation: shake 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0)
+            }
+
+            25% {
+                transform: translateX(5px)
+            }
+
+            50% {
+                transform: translateX(-5px)
+            }
+
+            75% {
+                transform: translateX(5px)
+            }
+
+            100% {
+                transform: translateX(0)
+            }
+        }
+    </style>
 </head>
 
 <body> <a style="float: left; margin: 10px 0 0 10px;" href="#" id="playbutton" data-lity class="fa-play">
-        <img id="play" src="images/commun/play.png" width="28" height="26" alt="" />
+        <img id="play" src="images/commun/music.png" width="28" height="26" alt="" />
     </a>
     <script src="js/openWeather.min.js"></script>
     <script type="text/javascript">
@@ -247,7 +275,7 @@ include "config.php"
                     $(this).removeClass('fa-play');
                     $(this).addClass('fa-pause');
                     document.getElementById('player').play()
-                    $("#play").attr("src", "images/commun/pause.png");
+
 
 
                 }
@@ -255,7 +283,7 @@ include "config.php"
                     $(this).removeClass('fa-pause');
                     $(this).addClass('fa-play');
                     document.getElementById('player').pause()
-                    $("#play").attr("src", "images/commun/play.png");
+
 
 
                 }
@@ -334,13 +362,14 @@ include "config.php"
                         </a></li>
                     <li>
                         <?php if ($_SESSION["lang"] == "fr")
-                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
-                            ?>
+                            echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                                ?>
                         <?php if ($_SESSION["lang"] == "en")
-                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
-                            ?>
+                            echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                                ?>
                         <?php echo $lang["reservation"]; ?>
-                        </a></li>
+                        </a>
+                    </li>
                     <li><a href="activites.php">
                             <?php echo $lang["activites"] ?>
                         </a></li>
@@ -361,9 +390,9 @@ include "config.php"
                 <div class="block_txt_center" style="float:left; width:400px; padding:25px 0 0 0; margin-left:100px">
                     <div class="scroll-pane">
                         <?php echo $lang["basseHaute"] ?>
-                        
+
                         <table id="table">
-                            <th >
+                            <th>
                                 <tr>
                                     <th></th>
                                     <th><b>Basse Saison</b></th>
@@ -374,7 +403,7 @@ include "config.php"
                                 <tr>
                                     <td>Chambre Deluxe</td>
                                     <td>210€</td>
-                                    <td>25€</td>
+                                    <td>250€</td>
                                 </tr>
                                 <tr>
                                     <td>Suite Junior</td>
@@ -393,7 +422,7 @@ include "config.php"
                                 </tr>
                             </tbody>
                         </table>
-                        
+
 
                         <?php echo $lang["tarifsList"] ?>
                         <?php echo $lang["conditions"] ?>
@@ -417,7 +446,7 @@ include "config.php"
             <?php echo $lang["droits"] ?>
         </div>
     </div>
-    
+
     <audio style="display: none;" id="player" src="audio/background music.mp3" preload="auto" controls loop>
     </audio>
 
@@ -463,26 +492,33 @@ include "config.php"
                 </a></li>
             <li>
                 <?php if ($_SESSION["lang"] == "fr")
-                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
-                            ?>
+                    echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                        ?>
                 <?php if ($_SESSION["lang"] == "en")
-                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
-                            ?>
+                    echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                        ?>
                 <?php echo $lang["reservation"]; ?>
-                </a></li>
+                </a>
+            </li>
 
 
             <li>
-                <a href="activites.php"><?php echo $lang["activites"] ?></a>
+                <a href="activites.php">
+                    <?php echo $lang["activites"] ?>
+                </a>
 
             </li>
 
             <li>
                 <?php echo $lang["galerie"] ?>
                 <ul>
-                    <li><a href="galerieInterieur.php"><?php echo $lang["interieur"]; ?></a></li>
+                    <li><a href="galerieInterieur.php">
+                            <?php echo $lang["interieur"]; ?>
+                        </a></li>
                     <li><a href="galerieExterieur.php"><?php echo $lang["exterieur"]; ?></a></li>
-                    <li><a href="galerie360.php"><?php echo $lang["en360"]; ?></a></li>
+                    <li><a href="galerie360.php">
+                            <?php echo $lang["en360"]; ?>
+                        </a></li>
                 </ul>
             </li>
 

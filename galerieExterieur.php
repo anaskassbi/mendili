@@ -69,6 +69,35 @@ include "config.php"
         <script type="text/javascript" src="js/mobile.js"></script>
         <?php
     } ?>
+
+    <style>
+        #play {
+            animation: shake 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0)
+            }
+
+            25% {
+                transform: translateX(5px)
+            }
+
+            50% {
+                transform: translateX(-5px)
+            }
+
+            75% {
+                transform: translateX(5px)
+            }
+
+            100% {
+                transform: translateX(0)
+            }
+        }
+    </style>
 </head>
 <style>
     .mimages {
@@ -96,13 +125,13 @@ include "config.php"
 
 <body>
     <a style="float: left; margin: 10px 0 0 10px;" href="#" id="playbutton" data-lity class="fa-play">
-        <img id="play" src="images/commun/play.png" width="28" height="26" alt="" />
+        <img id="play" src="images/commun/music.png" width="28" height="26" alt="" />
     </a>
     <script type="text/javascript">
 
         var images = []
         var html = ""
-        for (i = 1; i <=4; i++) {
+        for (i = 1; i <= 4; i++) {
             images.push({ image: "images/bg/exterieur/" + i + ".jpg" })
             html += "<a href='./images/bg/exterieur/" + i + ".jpg' style='display:none' class='lsb-preview'" +
                 "data-lsb-group='gallery1'>" +
@@ -127,7 +156,7 @@ include "config.php"
                     $(this).removeClass('fa-play');
                     $(this).addClass('fa-pause');
                     document.getElementById('player').play()
-                    $("#play").attr("src", "images/commun/pause.png");
+
 
 
                 }
@@ -135,7 +164,7 @@ include "config.php"
                     $(this).removeClass('fa-pause');
                     $(this).addClass('fa-play');
                     document.getElementById('player').pause()
-                    $("#play").attr("src", "images/commun/play.png");
+
 
 
                 }
@@ -200,11 +229,11 @@ include "config.php"
                         </a></li>
                     <li>
                         <?php if ($_SESSION["lang"] == "fr")
-                        echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
-                            ?>
+                            echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                                ?>
                         <?php if ($_SESSION["lang"] == "en")
-                        echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
-                            ?>
+                            echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                                ?>
                         <?php echo $lang["reservation"]; ?>
                         </a>
                     </li>
@@ -238,7 +267,7 @@ include "config.php"
             <div class="center_txt">
                 <div class="block_txt_center" style="width:411px; float:left; margin-left:150px">
                     <div class="scroll-pane" style="width:390px;">
-                    <br>
+                        <br>
                         <?php echo $lang["galerieexterieurText"]; ?>
                         <div class="mimages" id="mimages">
                             <a href="images/bg/exterieur/5.jpg" class="lsb-preview &quot2&quot"
@@ -305,11 +334,11 @@ include "config.php"
                 </a></li>
             <li>
                 <?php if ($_SESSION["lang"] == "fr")
-                echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
-                    ?>
+                    echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                        ?>
                 <?php if ($_SESSION["lang"] == "en")
-                echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
-                    ?>
+                    echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                        ?>
                 <?php echo $lang["reservation"]; ?>
                 </a>
             </li>

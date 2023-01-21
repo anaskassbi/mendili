@@ -89,10 +89,38 @@ include "config.php"
             opacity: .7
         }
     </style>
+    <style>
+        #play {
+            animation: shake 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0)
+            }
+
+            25% {
+                transform: translateX(5px)
+            }
+
+            50% {
+                transform: translateX(-5px)
+            }
+
+            75% {
+                transform: translateX(5px)
+            }
+
+            100% {
+                transform: translateX(0)
+            }
+        }
+    </style>
 </head>
 
 <body> <a style="float: left; margin: 10px 0 0 10px;" href="#" id="playbutton" data-lity class="fa-play">
-        <img id="play" src="images/commun/play.png" width="28" height="26" alt="" />
+        <img id="play" src="images/commun/music.png" width="28" height="26" alt="" />
     </a>
     <script type="text/javascript">
         var images = []
@@ -125,7 +153,7 @@ include "config.php"
                     $(this).removeClass('fa-play');
                     $(this).addClass('fa-pause');
                     document.getElementById('player').play()
-                    $("#play").attr("src", "images/commun/pause.png");
+                    
 
 
                 }
@@ -133,7 +161,7 @@ include "config.php"
                     $(this).removeClass('fa-pause');
                     $(this).addClass('fa-play');
                     document.getElementById('player').pause()
-                    $("#play").attr("src", "images/commun/play.png");
+                    
 
 
                 }
@@ -197,10 +225,10 @@ include "config.php"
                         </a></li>
                     <li>
                         <?php if ($_SESSION["lang"] == "fr")
-                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                            echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
                             ?>
                         <?php if ($_SESSION["lang"] == "en")
-                            echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                            echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
                             ?>
                         <?php echo $lang["reservation"]; ?>
                         </a></li>
@@ -293,10 +321,10 @@ include "config.php"
                 </a></li>
             <li>
                 <?php if ($_SESSION["lang"] == "fr")
-                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
+                    echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=fra&id_stile=19825">'
                     ?>
                 <?php if ($_SESSION["lang"] == "en")
-                    echo '<a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
+                    echo '<a target="_blank" href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=13549&dc=3614&lingua_int=eng&id_stile=19825">'
                     ?>
                 <?php echo $lang["reservation"]; ?>
                 </a></li>
